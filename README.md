@@ -20,7 +20,7 @@ best-utils 不仅有简单并常用的函数，也有很多高性能且兼容的
 npm i best-utils
 ```
 
-## 快速上手:keys:
+## 快速上手:key:
 
 ```js
 import { unique } from 'best-utils'
