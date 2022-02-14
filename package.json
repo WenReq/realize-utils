@@ -1,0 +1,23 @@
+{
+  "name": "best-utils",
+  "version": "1.0.0",
+  "description": "自定义工具函数库",
+  "main": "./dist/gogo-code-utils.js",
+  "scripts": {
+    "build:watch": "webpack --watch"
+  },
+  "keywords": [
+    "util",
+    "utils",
+    "clone",
+    "deepClone",
+    "debounce",
+    "throttle"
+  ],
+  "author": "wen",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
