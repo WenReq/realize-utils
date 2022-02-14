@@ -29,3 +29,6 @@ let newArr = unique([1, 3, 5, 2, 5, 3, 7])
 console.log(newArr); 
 // [ 1, 3, 5, 2,7 ] 
 ```
+
+## npm链接
+[npm](https://www.npmjs.com/package/best-utils)
