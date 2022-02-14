@@ -30,5 +30,5 @@ console.log(newArr);
 // [ 1, 3, 5, 2,7 ] 
 ```
 
-## npm链接
+## npm链接:link:
 [npm](https://www.npmjs.com/package/best-utils)
