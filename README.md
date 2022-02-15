@@ -1,6 +1,6 @@
 # best-utils
 
-一个自定义工具函数库
+一个一致性、模块化、高性能的 JavaScript 实用工具库。
 
 ## 介绍:bulb:
 
@@ -23,11 +23,11 @@ npm i best-utils
 ## 快速上手:key:
 
 ```js
-import { unique } from 'best-utils'
-let newArr = unique([1, 3, 5, 2, 5, 3, 7])
+import { chunk } from 'best-utils'
+let newChunk = chunk([1, 2, 3, 4, 5, 6, 7, 8, 9], 2)
 
-console.log(newArr); 
-// [ 1, 3, 5, 2,7 ] 
+console.log(newChunk); 
+// [ [1, 2], [3, 4], [5, 6], [7, 8], [9] ] 
 ```
 
 ## npm链接:link:
