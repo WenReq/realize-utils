@@ -3,7 +3,7 @@ module.exports = {
   // 模式
   mode: 'development', // 也可以使用 production
   // 入口
-  entry: './src/index.js',
+  entry: './index.js',
   // 出口
   output: {
     // 打包文件夹

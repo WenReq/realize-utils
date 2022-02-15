@@ -1,16 +1,4 @@
 export {
-  debounce,
-  throttle
+  chunk
 }
-  from './function/index.js'
-
-export {
-  clone,
-  deepClone
-}
-  from './object/index.js'
-
-export {
-  unique
-}
-from './array/index.js'
+  from './src/array/index.js'
