@@ -1,6 +1,6 @@
 {
   "name": "best-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "一个一致性、模块化、高性能的 JavaScript 实用工具库。",
   "main": "./dist/gogo-code-utils.js",
   "scripts": {
