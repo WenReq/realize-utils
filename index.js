@@ -1,4 +1,6 @@
 export {
-  chunk
+  chunk,
+  compact,
+  concat
 }
-  from './src/array/index.js'
+from './src/array/index.js'
