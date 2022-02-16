@@ -19,7 +19,6 @@ import arrayPush from "../internal/arrayPush";
  * // => [1]
  */
 export default function concat() {
-  debugger
   // 根据传入的参数数量分情况处理。
   let length = arguments.length
   // 1.没有传参，返回空数组

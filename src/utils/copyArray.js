@@ -13,6 +13,5 @@ export default function copyArray(source, array) {
   while (++index < length) {
     array[index] = source[index];
   }
-  debugger
   return array;
 }
