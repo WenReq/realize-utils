@@ -2,7 +2,7 @@
   "name": "realize-utils",
   "version": "1.0.0",
   "description": "前端业务代码工具库",
-  "main": "./dist/gogo-code-utils.js",
+  "main": "./dist/realize-utils.js",
   "scripts": {
     "build:watch": "webpack --watch",
     "eslint": "eslint src --ext .ts"
