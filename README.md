@@ -43,6 +43,6 @@ console.log(name);
 ## API文档:package:
 
 ### localStorage
-#### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/tree/master/src/store/index.js)&emsp;&emsp;根据name读取localStorage
-#### &emsp;&emsp;[removeStorage](https://github.com/wenreq/realize-utils/tree/master/src/store/index.js)&emsp;&emsp;根据name删除localStorage
-#### &emsp;&emsp;[setStorage](https://github.com/wenreq/realize-utils/tree/master/src/store/index.js)&emsp;&emsp;根据name添加localStorage
+#### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name读取localStorage
+#### &emsp;&emsp;[removeStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name删除localStorage
+#### &emsp;&emsp;[setStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name添加localStorage
