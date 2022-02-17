@@ -1,6 +1,4 @@
 export {
-  chunk,
-  compact,
-  concat
+  setStorage
 }
-from './src/array/index.js'
+from './src/store/index.js'

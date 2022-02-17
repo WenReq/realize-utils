@@ -9,7 +9,7 @@ module.exports = {
     // 打包文件夹
     path: path.resolve(__dirname, 'dist'),
     // 打包文件
-    filename: 'gogo-code-utils.js',
+    filename: 'realize-utils.js',
     // 向外暴露的对象的名称
     library: 'utils',
     // 打包生成库可以通过esm/commonjs/require的语法引入

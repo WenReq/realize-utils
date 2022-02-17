@@ -1,7 +1,7 @@
 {
-  "name": "best-utils",
+  "name": "realize-utils",
   "version": "1.0.3",
-  "description": "一个一致性、模块化、高性能的 JavaScript 实用工具库。",
+  "description": "前端业务代码工具库",
   "main": "./dist/gogo-code-utils.js",
   "scripts": {
     "build:watch": "webpack --watch",
@@ -18,8 +18,6 @@
   "author": "wen",
   "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.11.0",
-    "@typescript-eslint/parser": "^5.11.0",
     "eslint": "^8.9.0",
     "typescript": "^4.5.5",
     "webpack": "^5.68.0",

@@ -1,25 +1,40 @@
-# best-utils
+# realize-utils
 
-一个一致性、模块化、高性能的 JavaScript 实用工具库。
+前端业务代码工具库
+
+> 目的：高效率完成前端业务代码
+
+业务开发过程中，会经常用到`日期格式化`、`url参数转对象`、`浏览器类型判断`、`节流函数`等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交pr。
 
 ## 安装:wrench:
+1. 直接下载`dis`t目录下的[realize-utils.js](https://github.com/wenreq/best-utils/blob/master/dist/realize-utils.js)使用，支持UMD通用模块规范
+2. 使用npm安装
 
+### 浏览器：
+```js
+  <script src="realize-utils.js"></script>
+  <script>
+      var name = utils.getStorage('name')
+  </script>
+```
+
+### npm：
 ``` shell
-npm i best-utils
+npm i realize-utils
 ```
 
 ## 快速上手:key:
 
 ```js
-import { chunk } from 'best-utils'
-let newChunk = chunk([1, 2, 3, 4, 5, 6, 7, 8, 9], 2)
+import { getStorage } from 'realize-utils'
+let name = getStorage('name')
 
-console.log(newChunk); 
-// [ [1, 2], [3, 4], [5, 6], [7, 8], [9] ] 
+console.log(name); 
+// wen
 ```
 
 ## npm链接:link:
-[npm](https://www.npmjs.com/package/best-utils)
+[npm](https://www.npmjs.com/package/realize-utils)
 
 ## github链接:link:
-[git](https://github.com/wenreq/best-utils)
+[git](https://github.com/wenreq/realize-utils)
