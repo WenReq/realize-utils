@@ -1,4 +1,6 @@
 export {
-  setStorage
+  setStorage,
+  getStorage,
+  removeStorage
 }
-from './src/store/index.js'
+from './src/storage/index.js'
