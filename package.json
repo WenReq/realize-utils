@@ -1,6 +1,6 @@
 {
   "name": "realize-utils",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "前端业务代码工具库",
   "main": "./dist/gogo-code-utils.js",
   "scripts": {
