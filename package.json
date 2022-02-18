@@ -1,6 +1,6 @@
 {
   "name": "realize-utils",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "前端业务代码工具库",
   "main": "./dist/realize-utils.js",
   "scripts": {
