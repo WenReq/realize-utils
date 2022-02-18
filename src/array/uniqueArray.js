@@ -11,7 +11,7 @@ function uniqueArray(array) {
   if (array.length == 1) { 
     return arr
   }
-  return [...new Set(arr)]
+  return [...new Set(array)]
 }
 
 export default uniqueArray

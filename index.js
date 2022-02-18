@@ -5,7 +5,7 @@ export {
 } from './src/storage/index.js'
 
 export {
-  equality,
+  equalityArray,
   uniqueArray,
   mergeArrayDelRepeat
 } from './src/array/index.js'

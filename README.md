@@ -45,7 +45,7 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 ## API文档:package:
 
 ### Array
-#### &emsp;&emsp;[equality](https://github.com/wenreq/realize-utils/blob/master/src/array/equality.js)&emsp;&emsp;判读两个数组是否相等
+#### &emsp;&emsp;[equalityArray](https://github.com/wenreq/realize-utils/blob/master/src/array/equalityArray.js)&emsp;&emsp;判读两个数组是否相等
 #### &emsp;&emsp;[mergeArrayDelRepeat](https://github.com/wenreq/realize-utils/blob/master/src/array/mergeArrayDelRepeat.js)&emsp;&emsp;合并数组后去重
 #### &emsp;&emsp;[unique](https://github.com/wenreq/realize-utils/blob/master/src/array/unique.js)&emsp;&emsp;数组去重
 

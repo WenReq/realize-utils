@@ -5,7 +5,7 @@
  * @returns {Array} 将多个数组合并后并去重后的新数组
  */
 function mergeArrayDelRepeat() { 
-  const newArr = []
+  let newArr = []
   for (let i = 0; i < arguments.length; i++) {
     newArr.push(...arguments[i])
   }

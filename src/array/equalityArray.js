@@ -5,7 +5,7 @@
  * @param {Array} array2 第二个需要对比的数组
  * @returns {Boolean}
  */
-function equality(array1, array2) {
+function equalityArray(array1, array2) {
   // 直接判读，两个不相等，则不相等。
   if (array1 === array2) {
     return true
@@ -24,4 +24,4 @@ function equality(array1, array2) {
   return true
 }
 
-export default equality
+export default equalityArray
