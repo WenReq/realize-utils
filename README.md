@@ -50,9 +50,9 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 #### &emsp;&emsp;[unique](https://github.com/wenreq/realize-utils/blob/master/src/array/unique.js)&emsp;&emsp;数组去重
 
 ### Cookie
-### &emsp;&emsp;[getCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/getCookie.js)&emsp;&emsp;根据name读取Cookie
-### &emsp;&emsp;[setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js)&emsp;&emsp;根据name,vakue,days设置Cookie
-### &emsp;&emsp;[removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js)&emsp;&emsp;根据name删除Cookie
+#### &emsp;&emsp;[getCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/getCookie.js)&emsp;&emsp;根据name读取Cookie
+#### &emsp;&emsp;[setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js)&emsp;&emsp;根据name,vakue,days设置Cookie
+#### &emsp;&emsp;[removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js)&emsp;&emsp;根据name删除Cookie
 
 ### localStorage
 #### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name读取localStorage
