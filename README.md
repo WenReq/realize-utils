@@ -26,12 +26,12 @@ npm i realize-utils --save
 ## 快速上手:key:
 
 ```js
-import { getStorage, unique } from 'realize-utils'
+import { getStorage, uniqueArray } from 'realize-utils'
 let name = getStorage('name')
 console.log(name);  // wen
 
 let arr = [1, 3, 5, 1, 2, 3, 5]
-let uniqueArr = unique(arr);
+let uniqueArr = uniqueArray(arr);
 console.log(uniqueArr); // [1, 3, 5, 2]
 ```
 
