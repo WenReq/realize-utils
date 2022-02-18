@@ -13,6 +13,11 @@
     utils.setStorage('name', 'wen')
     console.log(utils.getStorage('name'))
     console.log(utils.removeStorage('aa'))
+    let arr = [1, 3, 5, 1, 2, 3, 5]
+    let uniqueArr = utils.uniqueArray(arr);
+    console.log(uniqueArr); 
+    utils.setCookie('name', 'wen', 20)
+    console.log(utils.getCookie('name'))
   </script>
 </body>
 </html>

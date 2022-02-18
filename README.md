@@ -20,17 +20,19 @@
 
 ### npm：
 ``` shell
-npm i realize-utils
+npm i realize-utils --save
 ```
 
 ## 快速上手:key:
 
 ```js
-import { getStorage } from 'realize-utils'
+import { getStorage, unique } from 'realize-utils'
 let name = getStorage('name')
+console.log(name);  // wen
 
-console.log(name); 
-// wen
+let arr = [1, 3, 5, 1, 2, 3, 5]
+let uniqueArr = unique(arr);
+console.log(uniqueArr); // [1, 3, 5, 2]
 ```
 
 ## npm链接:link:
@@ -42,7 +44,17 @@ console.log(name);
 
 ## API文档:package:
 
+### Array
+#### &emsp;&emsp;[equality](https://github.com/wenreq/realize-utils/blob/master/src/array/equality.js)&emsp;&emsp;判读两个数组是否相等
+#### &emsp;&emsp;[mergeArrayDelRepeat](https://github.com/wenreq/realize-utils/blob/master/src/array/mergeArrayDelRepeat.js)&emsp;&emsp;合并数组后去重
+#### &emsp;&emsp;[unique](https://github.com/wenreq/realize-utils/blob/master/src/array/unique.js)&emsp;&emsp;数组去重
+
+### Cookie
+### &emsp;&emsp;[getCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/getCookie.js)&emsp;&emsp;根据name读取Cookie
+### &emsp;&emsp;[setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js)&emsp;&emsp;根据name,vakue,days设置Cookie
+### &emsp;&emsp;[removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js)&emsp;&emsp;根据name删除Cookie
+
 ### localStorage
 #### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name读取localStorage
+#### &emsp;&emsp;[setStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name,value添加localStorage
 #### &emsp;&emsp;[removeStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name删除localStorage
-#### &emsp;&emsp;[setStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name添加localStorage
