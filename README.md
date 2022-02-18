@@ -47,7 +47,7 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 ### Array
 #### &emsp;&emsp;[equalityArray](https://github.com/wenreq/realize-utils/blob/master/src/array/equalityArray.js)&emsp;&emsp;判读两个数组是否相等
 #### &emsp;&emsp;[mergeArrayDelRepeat](https://github.com/wenreq/realize-utils/blob/master/src/array/mergeArrayDelRepeat.js)&emsp;&emsp;合并数组后去重
-#### &emsp;&emsp;[unique](https://github.com/wenreq/realize-utils/blob/master/src/array/unique.js)&emsp;&emsp;数组去重
+#### &emsp;&emsp;[uniqueArray](https://github.com/wenreq/realize-utils/blob/master/src/array/uniqueArray.js)&emsp;&emsp;数组去重
 
 ### Cookie
 #### &emsp;&emsp;[getCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/getCookie.js)&emsp;&emsp;根据name读取Cookie
