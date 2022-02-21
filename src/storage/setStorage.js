@@ -11,4 +11,4 @@ function setStorage(name, data) {
   window.localStorage.setItem(name, data)
 }
 
-export default setStorage
+module.exports = setStorage

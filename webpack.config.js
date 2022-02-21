@@ -3,7 +3,7 @@ module.exports = {
   // 模式
   mode: 'development', // 也可以使用 production
   // 入口
-  entry: './index.js',
+  entry: './src/index.js',
   // 出口
   output: {
     // 打包文件夹
@@ -15,4 +15,11 @@ module.exports = {
     // 打包生成库可以通过esm/commonjs/require的语法引入
     libraryTarget: 'umd',
   },
+  module: {
+    unknownContextCritical: false,
+    rules: [{
+      test: /\.js$/,
+      loader: "babel-loader"
+    }]
+  }
 }

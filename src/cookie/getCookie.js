@@ -15,4 +15,4 @@ function getCookie(name) {
   return ''
 }
 
-export default getCookie
+module.exports = getCookie

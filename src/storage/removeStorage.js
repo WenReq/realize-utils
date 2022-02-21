@@ -8,4 +8,4 @@ function removeStorage(name) {
   return window.localStorage.removeItem(name)
 }
 
-export default removeStorage
+module.exports = removeStorage

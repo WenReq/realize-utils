@@ -14,4 +14,4 @@ function uniqueArray(array) {
   return [...new Set(array)]
 }
 
-export default uniqueArray
+module.exports = uniqueArray

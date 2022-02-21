@@ -12,4 +12,4 @@ function mergeArrayDelRepeat() {
   return [...new Set([...newArr])]
 }
 
-export default mergeArrayDelRepeat
+module.exports = mergeArrayDelRepeat

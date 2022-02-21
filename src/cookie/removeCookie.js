@@ -1,4 +1,4 @@
-import setCookie from "./setCookie";
+var setCookie = require("./setCookie");
 
 /**
  * 根据 name 删除 cookie
@@ -10,4 +10,4 @@ function removeCookie(name) {
   setCookie(name, '1', -1);
 }
 
-export default removeCookie
+module.exports = removeCookie

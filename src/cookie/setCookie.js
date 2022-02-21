@@ -6,10 +6,9 @@
  * @param {Number} days cookie 的有限天数
  */
 function setCookie(name, value, days) { 
-  let exDate = new Date()
-  exDate.setDate(exDate.getDate() + days)
-  let completeStr = name + '=' + value + ';expires=' + exDate.toUTCString()
-  document.cookie = completeStr
+  var date = new Date();
+  date.setDate(date.getDate() + days);
+  document.cookie = name + '=' + value + ';expires=' + date.toUTCString();
 }
 
-export default setCookie
+module.exports = setCookie

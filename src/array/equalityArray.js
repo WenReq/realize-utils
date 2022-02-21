@@ -24,4 +24,4 @@ function equalityArray(array1, array2) {
   return true
 }
 
-export default equalityArray
+module.exports = equalityArray;

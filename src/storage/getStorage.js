@@ -12,4 +12,4 @@ function getStorage(name) {
   }
 }
 
-export default getStorage
+module.exports = getStorage
