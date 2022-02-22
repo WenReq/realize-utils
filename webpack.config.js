@@ -15,11 +15,31 @@ module.exports = {
     // 打包生成库可以通过esm/commonjs/require的语法引入
     libraryTarget: 'umd',
   },
+  // // 启用sourcemap来调试webpack的输出。
+  // devtool: "source-map",
+  // resolve: {
+  //   // Add '.ts' and '.tsx' 作为可解析扩展.
+  //   extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+  // },
   module: {
     unknownContextCritical: false,
     rules: [{
       test: /\.js$/,
       loader: "babel-loader"
-    }]
+    }],
+    // loaders: [
+    //   // 所有具有 '.ts' or '.tsx' 的扩展将由ts-loader处理。
+    //   {
+    //     test: /\.tsx?$/,
+    //     loader: "ts-loader"
+    //   }
+    // ],
+    // preLoaders: [
+    //   // 所有输出的'.js'文件将有任何sourcemaps被'source-map-loader'重新处理  
+    //   {
+    //     test: /\.js$/,
+    //     loader: "source-map-loader"
+    //   }
+    // ]
   }
 }

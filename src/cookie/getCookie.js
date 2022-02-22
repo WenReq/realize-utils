@@ -1,8 +1,8 @@
 /**
  * 根据 name 读取 cookie
  * @date 2022-02-18
- * @param {any} name
- * @returns {any}
+ * @param {String} name
+ * @returns {String}
  */
 function getCookie(name) { 
   let cookieArr = document.cookie.replace(/\s/g, "").split(";")

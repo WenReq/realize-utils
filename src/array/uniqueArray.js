@@ -9,7 +9,7 @@ function uniqueArray(array) {
     throw new Error('第一个参数必须是数组')
   }
   if (array.length == 1) { 
-    return arr
+    return array
   }
   return [...new Set(array)]
 }
