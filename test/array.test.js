@@ -20,7 +20,7 @@ describe('Array API', function () {
       assert.deepEqual(uniqueArray([1, 2, 3, {}, null, 5, 3, 2]), [1, 2, 3, {}, null, 5])
     })
   })
-  describe('#mergeArrayDelRepeat', function () {
+  describe('#mergeArrayDelRepeat()', function () {
     it('mergeArrayDelRepeat([1, 2, 3], [3, 4]) should return [1, 2, 3, 4]', function () {
       assert.deepEqual(mergeArrayDelRepeat([1, 2, 3], [3, 4]), [1, 2, 3, 4])
     })

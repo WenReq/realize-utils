@@ -5,7 +5,7 @@ var assert = require('assert')
 
 describe('Cookie API', function () {
   // setCookie
-  describe('#setCookie', function () {
+  describe('#setCookie()', function () {
     it('setCookie("test", "setCookie") should return true', function () {
       setCookie('test', 'setCookie', 10)
       assert.ok(getCookie('test') === 'setCookie')
@@ -16,7 +16,7 @@ describe('Cookie API', function () {
   })
 
   // getCookie
-  describe('#getCookie', function () { 
+  describe('#getCookie()', function () { 
     before(function () { 
       setCookie('test', 'getTestValue')
     })
@@ -29,7 +29,7 @@ describe('Cookie API', function () {
   })
 
   // removeCookie
-  describe('#removeCookie', function () { 
+  describe('#removeCookie()', function () { 
     before(function () { 
       setCookie('test', 'removeTestValue')
     })

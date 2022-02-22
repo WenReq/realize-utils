@@ -10,7 +10,7 @@ var assert = require('assert')
 
 describe('Storage API', function () { 
   // getStorage
-  describe('#getStorage', function () {
+  describe('#getStorage()', function () {
     before(function () {
       setStorage('test', 'getTestValue')
     })
@@ -23,7 +23,7 @@ describe('Storage API', function () {
   })
 
   // setStorage
-  describe('#setStorage', function () { 
+  describe('#setStorage()', function () { 
     it('setStorage("test", "setTestValue") should return true', function () { 
       setStorage('test', 'setTestValue')
       assert(getStorage('test') === 'setTestValue')
@@ -34,7 +34,7 @@ describe('Storage API', function () {
   })
 
   // removeStorage
-  describe('#removeStorage', function () { 
+  describe('#removeStorage()', function () { 
     before(function () { 
       setStorage('test', 'removeTestValue')
     })
