@@ -8,12 +8,12 @@
 
 > 目的：高效率完成前端业务代码
 
-业务开发过程中，会经常用到`日期格式化`、`url参数转对象`、`浏览器类型判断`、`节流函数`等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交pr。
+业务开发过程中，会经常用到`日期格式化`、`url参数转对象`、`浏览器类型判断`、`节流函数`等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到 npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交 pr。
 
-## 安装:wrench
+## 安装:wrench:
 
-1. 直接下载`dist`目录下的[realize-utils.js](https://github.com/wenreq/realize-utils/blob/master/dist/realize-utils.js)使用，支持UMD通用模块规范
-2. 使用npm安装
+1. 直接下载`dist`目录下的[realize-utils.js](https://github.com/wenreq/realize-utils/blob/master/dist/realize-utils.js)使用，支持 UMD 通用模块规范
+2. 使用 npm 安装
 
 ### 浏览器
 
@@ -30,32 +30,32 @@
 
 ### npm
 
-``` shell
+```shell
 npm i realize-utils -D
 ```
 
-## 快速上手:key
+## 快速上手:key:
 
 ```js
-import { setStorage, getStorage, uniqueArray } from 'realize-utils'
-setStorage('name', 'wen')
-let name = getStorage('name')
-console.log(name);  // wen
+import { setStorage, getStorage, uniqueArray } from "realize-utils";
+setStorage("name", "wen");
+let name = getStorage("name");
+console.log(name); // wen
 
-let arr = [1, 3, 5, 1, 2, 3, 5]
+let arr = [1, 3, 5, 1, 2, 3, 5];
 let uniqueArr = uniqueArray(arr);
 console.log(uniqueArr); // [1, 3, 5, 2]
 ```
 
-## npm链接:link
+## npm 链接:link:
 
 [npm](https://www.npmjs.com/package/realize-utils)
 
-## github链接:link
+## github 链接:link:
 
 [git](https://github.com/wenreq/realize-utils)
 
-## API文档:package
+## API 文档:package:
 
 ### Array
 
@@ -67,24 +67,24 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 ### Class
 
-#### &emsp;&emsp;[addClass](https://github.com/wenreq/realize-utils/blob/master/src/class/addClass.js)&emsp;&emsp;为元素添加class
+#### &emsp;&emsp;[addClass](https://github.com/wenreq/realize-utils/blob/master/src/class/addClass.js)&emsp;&emsp;为元素添加 class
 
-#### &emsp;&emsp;[hasClass](https://github.com/wenreq/realize-utils/blob/master/src/class/hasClass.js)&emsp;&emsp;判断元素是否有某个class
+#### &emsp;&emsp;[hasClass](https://github.com/wenreq/realize-utils/blob/master/src/class/hasClass.js)&emsp;&emsp;判断元素是否有某个 class
 
-#### &emsp;&emsp;[removeClass](https://github.com/wenreq/realize-utils/blob/master/src/class/removeClass.js)&emsp;&emsp;为元素移除class
+#### &emsp;&emsp;[removeClass](https://github.com/wenreq/realize-utils/blob/master/src/class/removeClass.js)&emsp;&emsp;为元素移除 class
 
 ### Cookie
 
-#### &emsp;&emsp;[getCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/getCookie.js)&emsp;&emsp;根据name读取Cookie
+#### &emsp;&emsp;[getCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/getCookie.js)&emsp;&emsp;根据 name 读取 Cookie
 
-#### &emsp;&emsp;[setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js)&emsp;&emsp;根据name,vakue,days设置Cookie
+#### &emsp;&emsp;[setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js)&emsp;&emsp;根据 name,vakue,days 设置 Cookie
 
-#### &emsp;&emsp;[removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js)&emsp;&emsp;根据name删除Cookie
+#### &emsp;&emsp;[removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js)&emsp;&emsp;根据 name 删除 Cookie
 
 ### localStorage
 
-#### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name读取localStorage
+#### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name 读取 localStorage
 
-#### &emsp;&emsp;[setStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name,value添加localStorage
+#### &emsp;&emsp;[setStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name,value 添加 localStorage
 
-#### &emsp;&emsp;[removeStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据name删除localStorage
+#### &emsp;&emsp;[removeStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name 删除 localStorage

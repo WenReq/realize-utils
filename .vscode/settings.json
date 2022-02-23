@@ -1,15 +1,4 @@
 {
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "typescript",
-            "autoFix": true
-        },
-    ],
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
+  "eslint.run": "onSave",
+  "markdown.extension.toc.updateOnSave": false
 }
