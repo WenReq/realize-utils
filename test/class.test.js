@@ -7,13 +7,13 @@ describe('Class API', function () {
   // addClass
   describe('#addClass()', function () {
     let ele = null
-    before(function () { 
+    before(function () {
       let div = document.createElement('div')
       div.id = 'addClass'
       document.body.appendChild(div)
       ele = document.querySelector('#addClass')
     })
-    it('addClass(ele, "test") should return true', function () { 
+    it('addClass(ele, "test") should return true', function () {
       addClass(ele, 'test')
       assert(hasClass(ele, 'test'))
     })
@@ -23,22 +23,22 @@ describe('Class API', function () {
   })
 
   // hasClass
-  describe('#hasClass()', function () { 
+  describe('#hasClass()', function () {
     let ele = null
-    before(function () { 
+    before(function () {
       let div = document.createElement('div')
       div.id = 'hasClass'
       document.body.appendChild(div)
       ele = document.querySelector('#hasClass')
       addClass(ele, 'test')
     })
-    it('hasClass(ele, "test") should return true', function () { 
+    it('hasClass(ele, "test") should return true', function () {
       assert(hasClass(ele, 'test'))
     })
-    it('hasClass(ele, "test1") should return false', function () { 
+    it('hasClass(ele, "test1") should return false', function () {
       assert(!hasClass(ele, 'test1'))
     })
-    after(function () { 
+    after(function () {
       document.body.removeChild(ele)
     })
   })
@@ -46,18 +46,18 @@ describe('Class API', function () {
   // removeClass
   describe('#remove()', function () {
     let ele = null
-    before(function () { 
+    before(function () {
       let div = document.createElement('div')
       div.id = 'removeClass'
       document.body.appendChild(div)
       ele = document.querySelector('#removeClass')
       addClass(ele, 'test')
     })
-    it('removeClass(ele, "test") should return false', function () { 
+    it('removeClass(ele, "test") should return false', function () {
       removeClass(ele, 'test')
       assert.notEqual(hasClass(ele, 'test'), true)
     })
-    it('removeClass(ele, "test") should return false', function () { 
+    it('removeClass(ele, "test") should return false', function () {
       removeClass(ele, 'test')
       assert.notEqual(hasClass(ele, 'test'), true)
       addClass(ele, 'newTest')
@@ -65,7 +65,7 @@ describe('Class API', function () {
       removeClass(ele, 'newTest')
       assert.notEqual(hasClass(ele, 'newTest'), true)
     })
-    after(function () {  
+    after(function () {
       document.body.removeChild(ele)
     })
   })

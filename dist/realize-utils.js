@@ -103,7 +103,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./array/equalityArray.js\": \"./src/array/equalityArray.js\",\n\t\"./array/mergeArrayDelRepeat.js\": \"./src/array/mergeArrayDelRepeat.js\",\n\t\"./array/uniqueArray.js\": \"./src/array/uniqueArray.js\",\n\t\"./class/addClass.js\": \"./src/class/addClass.js\",\n\t\"./class/hasClass.js\": \"./src/class/hasClass.js\",\n\t\"./class/removeClass.js\": \"./src/class/removeClass.js\",\n\t\"./cookie/getCookie.js\": \"./src/cookie/getCookie.js\",\n\t\"./cookie/removeCookie.js\": \"./src/cookie/removeCookie.js\",\n\t\"./cookie/setCookie.js\": \"./src/cookie/setCookie.js\",\n\t\"./storage/getStorage.js\": \"./src/storage/getStorage.js\",\n\t\"./storage/removeStorage.js\": \"./src/storage/removeStorage.js\",\n\t\"./storage/setStorage.js\": \"./src/storage/setStorage.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive ^\\\\.\\\\/.+\\\\/.+\\\\.js$\";\n\n//# sourceURL=webpack://utils/./src_sync_^\\.\\/.+\\/.+\\.js$?");
+eval("var map = {\n\t\"./array/equalityArray.js\": \"./src/array/equalityArray.js\",\n\t\"./array/mergeArrayDelRepeat.js\": \"./src/array/mergeArrayDelRepeat.js\",\n\t\"./array/subArray.js\": \"./src/array/subArray.js\",\n\t\"./array/uniqueArray.js\": \"./src/array/uniqueArray.js\",\n\t\"./class/addClass.js\": \"./src/class/addClass.js\",\n\t\"./class/hasClass.js\": \"./src/class/hasClass.js\",\n\t\"./class/removeClass.js\": \"./src/class/removeClass.js\",\n\t\"./cookie/getCookie.js\": \"./src/cookie/getCookie.js\",\n\t\"./cookie/removeCookie.js\": \"./src/cookie/removeCookie.js\",\n\t\"./cookie/setCookie.js\": \"./src/cookie/setCookie.js\",\n\t\"./device/getExplore.js\": \"./src/device/getExplore.js\",\n\t\"./device/getOS.js\": \"./src/device/getOS.js\",\n\t\"./storage/getStorage.js\": \"./src/storage/getStorage.js\",\n\t\"./storage/removeStorage.js\": \"./src/storage/removeStorage.js\",\n\t\"./storage/setStorage.js\": \"./src/storage/setStorage.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive ^\\\\.\\\\/.+\\\\/.+\\\\.js$\";\n\n//# sourceURL=webpack://utils/./src_sync_^\\.\\/.+\\/.+\\.js$?");
 
 /***/ }),
 
@@ -126,6 +126,17 @@ eval("/**\r\n * 判断两个数组是否相等\r\n * @date 2022-02-18\r\n * @par
 /***/ (function(module, exports) {
 
 eval("/**\r\n * 将多个数组合并为一个新的数组，并去重。\r\n * 该方法可以传一个或多个数组\r\n * @date 2022-02-18\r\n * @returns {Array} 将多个数组合并后并去重后的新数组\r\n */\nfunction mergeArrayDelRepeat() {\n  let newArr = [];\n  for (let i = 0; i < arguments.length; i++) {\n    newArr.push(...arguments[i]);\n  }\n  return [...new Set([...newArr])];\n}\n\nmodule.exports = mergeArrayDelRepeat;\n\n//# sourceURL=webpack://utils/./src/array/mergeArrayDelRepeat.js?");
+
+/***/ }),
+
+/***/ "./src/array/subArray.js":
+/*!*******************************!*\
+  !*** ./src/array/subArray.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 数组相减\r\n * 例如有两个数组\r\n * const arr1 = [1, 2, 3, 4, 5, 6] 和 const arr2 = [1, 2, 3]\r\n * 那么这时候需要第一个数组减去第二个数组中的项，返回剩下的项\r\n * 使用 subArray(arr1, arr2) 就可以解决这个问题\r\n * 返回 [4, 5, 6]\r\n * @date 2022-02-23\r\n * @param {Array} array1 要处理的数组\r\n * @param {Array} array2 要处理的数组\r\n * @returns {Array} 相减后的数组\r\n */\nfunction subArray(array1, array2) {\n  if (array1.length > array2.length) {\n    return array1.filter(item1 => {\n      return !array2.find(item2 => {\n        return item1 === item2;\n      });\n    });\n  } else {\n    return array2.filter(item1 => {\n      return !array1.find(item2 => {\n        return item1 === item2;\n      });\n    });\n  }\n}\n\nmodule.exports = subArray;\n\n//# sourceURL=webpack://utils/./src/array/subArray.js?");
 
 /***/ }),
 
@@ -206,6 +217,28 @@ eval("/**\r\n * 设置 cookie\r\n * @date 2022-02-18\r\n * @param {String} name 
 
 /***/ }),
 
+/***/ "./src/device/getExplore.js":
+/*!**********************************!*\
+  !*** ./src/device/getExplore.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 获取浏览器类型和版本\r\n * @date 2022-02-23\r\n * @returns {String} '类型：版本'\r\n */\nfunction getExplore() {\n  var sys = {},\n      ua = navigator.userAgent.toLowerCase(),\n      s;\n  // IE - rv:11.0) like Gecko\n  (s = ua.match(/rv:([\\d.]+)\\) like gecko/)) ? sys.ie = s[1] : (s = ua.match(/msie ([\\d\\.]+)/)) ? sys.ie = s[1] : (s = ua.match(/edge\\/([\\d\\.]+)/)) ? sys.edge = s[1] : (s = ua.match(/firefox\\/([\\d\\.]+)/)) ? sys.firefox = s[1] : (s = ua.match(/(?:opera|opr).([\\d\\.]+)/)) ? sys.opera = s[1] : (s = ua.match(/chrome\\/([\\d\\.]+)/)) ? sys.chrome = s[1] : (s = ua.match(/version\\/([\\d\\.]+).*safari/)) ? sys.safari = s[1] : 0;\n\n  // 根据关系进行判断\n  if (sys.ie) return 'IE：' + sys.ie;\n  if (sys.edge) return 'EDGE: ' + sys.edge;\n  if (sys.firefox) return 'Firefox: ' + sys.firefox;\n  if (sys.chrome) return 'Chrome: ' + sys.chrome;\n  if (sys.opera) return 'Opera: ' + sys.opera;\n  if (sys.safari) return 'Safari: ' + sys.safari;\n  return 'unknown';\n}\n\nmodule.exports = getExplore;\n\n//# sourceURL=webpack://utils/./src/device/getExplore.js?");
+
+/***/ }),
+
+/***/ "./src/device/getOS.js":
+/*!*****************************!*\
+  !*** ./src/device/getOS.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 获取操作系统类型\r\n * @date 2022-02-23\r\n * @returns {String} 操作系统类型\r\n */\nfunction getOS() {\n  var userAgent = 'navigator' in window && 'userAgent' in navigator && navigator.userAgent.toLowerCase() || '';\n  var appVersion = 'navigator' in window && 'appVersion' in navigator && navigator.appVersion.toLowerCase() || '';\n\n  if (/iphone/i.test(userAgent) || /ipad/i.test(userAgent) || /ipod/i.test(userAgent)) return 'ios';\n  if (/android/i.test(userAgent)) return 'android';\n  if (/win/i.test(appVersion) && /phone/i.test(userAgent)) return 'windowsPhone';\n  if (/mac/i.test(appVersion)) return 'MacOSX';\n  if (/win/i.test(appVersion)) return 'windows';\n  if (/linux/i.test(appVersion)) return 'linux';\n}\n\nmodule.exports = getOS;\n\n//# sourceURL=webpack://utils/./src/device/getOS.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -213,7 +246,7 @@ eval("/**\r\n * 设置 cookie\r\n * @date 2022-02-18\r\n * @param {String} name 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/**\r\n * @desc webpack打包入口文件  \r\n * @example 自动引入子目录下所有js文件\r\n */\nlet moduleExports = {};\n\nconst r = __webpack_require__(\"./src sync recursive ^\\\\.\\\\/.+\\\\/.+\\\\.js$\");\nr.keys().forEach(key => {\n  console.log(key);\n  let attr = key.substring(key.lastIndexOf('/') + 1, key.lastIndexOf('.'));\n  moduleExports[attr] = r(key);\n});\n\nmodule.exports = moduleExports;\n\n//# sourceURL=webpack://utils/./src/index.js?");
+eval("/**\r\n * @desc webpack打包入口文件  \r\n * @example 自动引入子目录下所有js文件\r\n */\nlet moduleExports = {};\n\nconst r = __webpack_require__(\"./src sync recursive ^\\\\.\\\\/.+\\\\/.+\\\\.js$\");\nr.keys().forEach(key => {\n  let attr = key.substring(key.lastIndexOf('/') + 1, key.lastIndexOf('.'));\n  moduleExports[attr] = r(key);\n});\n\nmodule.exports = moduleExports;\n\n//# sourceURL=webpack://utils/./src/index.js?");
 
 /***/ }),
 
