@@ -2,7 +2,7 @@
 
 # realize-utils
 
-[![npm version](./static/npm.svg)](https://www.npmjs.com/package/realize-utils) [![license](./static/license.svg)](https://www.npmjs.com/package/realize-utils)
+[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.1.0&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils)
 
 前端业务代码工具库
 
@@ -50,10 +50,6 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 ## npm 链接:link:
 
 [npm](https://www.npmjs.com/package/realize-utils)
-
-## github 链接:link:
-
-[git](https://github.com/wenreq/realize-utils)
 
 ## API 文档:package:
 
