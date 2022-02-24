@@ -2,7 +2,7 @@
 
 # realize-utils
 
-[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.1.1&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils)
+[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.1.2&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils)
 
 前端业务代码工具库
 
@@ -69,9 +69,26 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 #### &emsp;&emsp;[setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js)&emsp;&emsp;根据 name,vakue,days 设置 Cookie
 #### &emsp;&emsp;[removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js)&emsp;&emsp;根据 name 删除 Cookie
 
+### Date
+#### &emsp;&emsp;[pastDate](https://github.com/wenreq/realize-utils/blob/master/src/date/pastDate.js)&emsp;&emsp;计算一个时间到现在过去了多久
+
 ### Device
 #### &emsp;&emsp;[getExplore](https://github.com/wenreq/realize-utils/blob/master/src/device/getExplore.js)&emsp;&emsp;获取浏览器：版本号
 #### &emsp;&emsp;[getOS](https://github.com/wenreq/realize-utils/blob/master/src/device/getOS.js)&emsp;&emsp;获取操作系统类型
+
+### Dom
+#### &emsp;&emsp;[getScrollTop](https://github.com/wenreq/realize-utils/blob/master/src/dom/getScrollTop.js)&emsp;&emsp;获取滚动条距顶部的距离
+#### &emsp;&emsp;[offset](https://github.com/wenreq/realize-utils/blob/master/src/dom/offset.js)&emsp;&emsp;获取一个元素的距离文档(document)的位置，类似JQ中的offset()&emsp;&emsp;ele.offset()
+#### &emsp;&emsp;[scrollTo](https://github.com/wenreq/realize-utils/blob/master/src/dom/scrollTo.js)&emsp;&emsp;在${duration}时间内，滚动条平滑滚动到${to}指定位置&emsp;&emsp;scrollTo(to, duration)
+#### &emsp;&emsp;[setScrollTop](https://github.com/wenreq/realize-utils/blob/master/src/dom/setScrollTop.js)&emsp;&emsp;设置滚动条距顶部的距离
+#### &emsp;&emsp;[windowResize](https://github.com/wenreq/realize-utils/blob/master/src/dom/windowResize.js)&emsp;&emsp;H5软键盘缩回、弹起回调
+
+### Function
+#### &emsp;&emsp;[debounce](https://github.com/wenreq/realize-utils/blob/master/src/function/debounce.js)&emsp;&emsp;函数防抖
+#### &emsp;&emsp;[throttle](https://github.com/wenreq/realize-utils/blob/master/src/function/throttle.js)&emsp;&emsp;函数节流
+
+### Keycode
+#### &emsp;&emsp;[getKeyName](https://github.com/wenreq/realize-utils/blob/master/src/keycode/getKeyName.js)&emsp;&emsp;根据keycode获得键名
 
 ### localStorage
 #### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name 读取 localStorage

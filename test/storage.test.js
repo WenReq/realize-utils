@@ -8,37 +8,37 @@ var removeStorage = require('../src/storage/removeStorage')
 var assert = require('assert')
 
 
-describe('Storage API', function () { 
+describe('Storage API', function () {
   // getStorage
   describe('#getStorage()', function () {
     before(function () {
       setStorage('test', 'getTestValue')
     })
-    it('getStorage("test", "getTestValue") should return true', function () { 
+    it('getStorage("test", "getTestValue") should return true', function () {
       assert(getStorage('test') === 'getTestValue')
     })
-    after(function () { 
+    after(function () {
       removeStorage('test')
     })
   })
 
   // setStorage
-  describe('#setStorage()', function () { 
-    it('setStorage("test", "setTestValue") should return true', function () { 
+  describe('#setStorage()', function () {
+    it('setStorage("test", "setTestValue") should return true', function () {
       setStorage('test', 'setTestValue')
       assert(getStorage('test') === 'setTestValue')
     })
-    after(function () { 
+    after(function () {
       removeStorage('test')
     })
   })
 
   // removeStorage
-  describe('#removeStorage()', function () { 
-    before(function () { 
+  describe('#removeStorage()', function () {
+    before(function () {
       setStorage('test', 'removeTestValue')
     })
-    it('removeStorage("test", "removeTestValue") should return false', function () { 
+    it('removeStorage("test", "removeTestValue") should return false', function () {
       removeStorage('test')
       assert.notEqual(getStorage('test') === 'removeTestValue', true)
     })
