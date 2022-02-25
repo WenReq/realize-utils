@@ -7,7 +7,8 @@
     "build": "webpack --watch",
     "eslint": "eslint src --ext .ts",
     "test": "mocha -r jsdom-global/register",
-    "test1": "nyc mocha -r jsdom-global/register"
+    "test1": "nyc mocha -r jsdom-global/register",
+    "test-travis": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly"
   },
   "keywords": [
     "util",
@@ -23,7 +24,9 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.1.1",
     "eslint": "^8.9.0",
+    "istanbul": "^0.4.5",
     "jsdom": "19.0.0",
     "jsdom-global": "3.0.2",
     "mocha": "^9.2.1",

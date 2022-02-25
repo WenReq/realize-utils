@@ -1,3 +1,8 @@
-service_name: travis-pro
-repo_token: ckCkC0FwraSGBXXloPRYeCMeKc1j6eqJT
-
+sudo: false
+language: node_js
+node_js:
+  - 4.0
+script:
+  - npm run-script test-travis
+after_success:
+  - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
