@@ -2,7 +2,7 @@
 
 # realize-utils
 
-[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.1.2&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils)
+[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.1.3&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils)
 
 前端业务代码工具库
 
@@ -89,6 +89,12 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 ### Keycode
 #### &emsp;&emsp;[getKeyName](https://github.com/wenreq/realize-utils/blob/master/src/keycode/getKeyName.js)&emsp;&emsp;根据keycode获得键名
+
+### Object
+#### &emsp;&emsp;[deepClone](https://github.com/wenreq/realize-utils/blob/master/src/object/deepClone.js)&emsp;&emsp;对象的深拷贝
+#### &emsp;&emsp;[shallowClone](https://github.com/wenreq/realize-utils/blob/master/src/object/shallowClone.js)&emsp;&emsp;对象的浅拷贝
+#### &emsp;&emsp;[isEmptyObject](https://github.com/wenreq/realize-utils/blob/master/src/object/isEmptyObject.js)&emsp;&emsp;判断对象是否为空
+#### &emsp;&emsp;[getFormData](https://github.com/wenreq/realize-utils/blob/master/src/object/getFormData.js)&emsp;&emsp;将对象转换为 formData 对象
 
 ### localStorage
 #### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name 读取 localStorage
