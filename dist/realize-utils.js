@@ -103,7 +103,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./array/equalityArray.js\": \"./src/array/equalityArray.js\",\n\t\"./array/mergeArrayDelRepeat.js\": \"./src/array/mergeArrayDelRepeat.js\",\n\t\"./array/subArray.js\": \"./src/array/subArray.js\",\n\t\"./array/uniqueArray.js\": \"./src/array/uniqueArray.js\",\n\t\"./class/addClass.js\": \"./src/class/addClass.js\",\n\t\"./class/hasClass.js\": \"./src/class/hasClass.js\",\n\t\"./class/removeClass.js\": \"./src/class/removeClass.js\",\n\t\"./cookie/getCookie.js\": \"./src/cookie/getCookie.js\",\n\t\"./cookie/removeCookie.js\": \"./src/cookie/removeCookie.js\",\n\t\"./cookie/setCookie.js\": \"./src/cookie/setCookie.js\",\n\t\"./date/pastDate.js\": \"./src/date/pastDate.js\",\n\t\"./device/getExplore.js\": \"./src/device/getExplore.js\",\n\t\"./device/getOS.js\": \"./src/device/getOS.js\",\n\t\"./dom/getScrollTop.js\": \"./src/dom/getScrollTop.js\",\n\t\"./dom/offset.js\": \"./src/dom/offset.js\",\n\t\"./dom/scrollTo.js\": \"./src/dom/scrollTo.js\",\n\t\"./dom/setScrollTop.js\": \"./src/dom/setScrollTop.js\",\n\t\"./dom/windowResize.js\": \"./src/dom/windowResize.js\",\n\t\"./function/debounce.js\": \"./src/function/debounce.js\",\n\t\"./function/throttle.js\": \"./src/function/throttle.js\",\n\t\"./keycode/getKeyName.js\": \"./src/keycode/getKeyName.js\",\n\t\"./object/deepClone.js\": \"./src/object/deepClone.js\",\n\t\"./object/getFormData.js\": \"./src/object/getFormData.js\",\n\t\"./object/isEmptyObject.js\": \"./src/object/isEmptyObject.js\",\n\t\"./object/shallowClone.js\": \"./src/object/shallowClone.js\",\n\t\"./storage/getStorage.js\": \"./src/storage/getStorage.js\",\n\t\"./storage/removeStorage.js\": \"./src/storage/removeStorage.js\",\n\t\"./storage/setStorage.js\": \"./src/storage/setStorage.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive ^\\\\.\\\\/.+\\\\/.+\\\\.js$\";\n\n//# sourceURL=webpack://utils/./src_sync_^\\.\\/.+\\/.+\\.js$?");
+eval("var map = {\n\t\"./array/equalityArray.js\": \"./src/array/equalityArray.js\",\n\t\"./array/mergeArrayDelRepeat.js\": \"./src/array/mergeArrayDelRepeat.js\",\n\t\"./array/subArray.js\": \"./src/array/subArray.js\",\n\t\"./array/uniqueArray.js\": \"./src/array/uniqueArray.js\",\n\t\"./class/addClass.js\": \"./src/class/addClass.js\",\n\t\"./class/hasClass.js\": \"./src/class/hasClass.js\",\n\t\"./class/removeClass.js\": \"./src/class/removeClass.js\",\n\t\"./cookie/getCookie.js\": \"./src/cookie/getCookie.js\",\n\t\"./cookie/removeCookie.js\": \"./src/cookie/removeCookie.js\",\n\t\"./cookie/setCookie.js\": \"./src/cookie/setCookie.js\",\n\t\"./device/getExplore.js\": \"./src/device/getExplore.js\",\n\t\"./device/getOS.js\": \"./src/device/getOS.js\",\n\t\"./dom/getScrollTop.js\": \"./src/dom/getScrollTop.js\",\n\t\"./dom/offset.js\": \"./src/dom/offset.js\",\n\t\"./dom/scrollTo.js\": \"./src/dom/scrollTo.js\",\n\t\"./dom/setScrollTop.js\": \"./src/dom/setScrollTop.js\",\n\t\"./dom/windowResize.js\": \"./src/dom/windowResize.js\",\n\t\"./function/debounce.js\": \"./src/function/debounce.js\",\n\t\"./function/throttle.js\": \"./src/function/throttle.js\",\n\t\"./keycode/getKeyName.js\": \"./src/keycode/getKeyName.js\",\n\t\"./object/deepClone.js\": \"./src/object/deepClone.js\",\n\t\"./object/getFormData.js\": \"./src/object/getFormData.js\",\n\t\"./object/isEmptyObject.js\": \"./src/object/isEmptyObject.js\",\n\t\"./object/shallowClone.js\": \"./src/object/shallowClone.js\",\n\t\"./random/randomColor.js\": \"./src/random/randomColor.js\",\n\t\"./random/randomNumber.js\": \"./src/random/randomNumber.js\",\n\t\"./regexp/isColor.js\": \"./src/regexp/isColor.js\",\n\t\"./regexp/isEmail.js\": \"./src/regexp/isEmail.js\",\n\t\"./regexp/isIdCard.js\": \"./src/regexp/isIdCard.js\",\n\t\"./regexp/isPhoneNum.js\": \"./src/regexp/isPhoneNum.js\",\n\t\"./regexp/isUrl.js\": \"./src/regexp/isUrl.js\",\n\t\"./storage/getStorage.js\": \"./src/storage/getStorage.js\",\n\t\"./storage/removeStorage.js\": \"./src/storage/removeStorage.js\",\n\t\"./storage/setStorage.js\": \"./src/storage/setStorage.js\",\n\t\"./string/digitUppercase.js\": \"./src/string/digitUppercase.js\",\n\t\"./support/isSupportWebP.js\": \"./src/support/isSupportWebP.js\",\n\t\"./time/formatPassTime.js\": \"./src/time/formatPassTime.js\",\n\t\"./time/formatRemainTime.js\": \"./src/time/formatRemainTime.js\",\n\t\"./time/isLeapYear.js\": \"./src/time/isLeapYear.js\",\n\t\"./time/isSameDay.js\": \"./src/time/isSameDay.js\",\n\t\"./time/monthDays.js\": \"./src/time/monthDays.js\",\n\t\"./time/timeLeft.js\": \"./src/time/timeLeft.js\",\n\t\"./url/parseQueryString.js\": \"./src/url/parseQueryString.js\",\n\t\"./url/stringifyQueryString.js\": \"./src/url/stringifyQueryString.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive ^\\\\.\\\\/.+\\\\/.+\\\\.js$\";\n\n//# sourceURL=webpack://utils/./src_sync_^\\.\\/.+\\/.+\\.js$?");
 
 /***/ }),
 
@@ -214,17 +214,6 @@ eval("var setCookie = __webpack_require__(/*! ./setCookie */ \"./src/cookie/setC
 /***/ (function(module, exports) {
 
 eval("/**\r\n * 设置 cookie\r\n * @date 2022-02-18\r\n * @param {String} name cookie 名称\r\n * @param {String} value cookie 的值\r\n * @param {Number} days cookie 的有限天数\r\n */\nfunction setCookie(name, value, days) {\n  var date = new Date();\n  date.setDate(date.getDate() + days);\n  document.cookie = name + '=' + value + ';expires=' + date.toUTCString();\n}\n\nmodule.exports = setCookie;\n\n//# sourceURL=webpack://utils/./src/cookie/setCookie.js?");
-
-/***/ }),
-
-/***/ "./src/date/pastDate.js":
-/*!******************************!*\
-  !*** ./src/date/pastDate.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("/**\r\n * 计算从一个时间到现在过去多久\r\n * @date 2022-02-24\r\n * @param {String} 字符串日期 '2020-11-29'\r\n * @returns {String} '451天15小时17分钟25秒'\r\n */\nfunction pastDate(time) {\n  const nowStamp = new Date().getTime();\n  const targetStamp = new Date(time.replace(/-/g, '/')).getTime();\n  const difference = nowStamp - targetStamp;\n  const allSeconds = Math.floor(difference / 1000);\n  const allMinutes = Math.floor(allSeconds / 60);\n  const allHours = Math.floor(allMinutes / 60);\n  const day = Math.floor(allHours / 24);\n  const hours = allHours % 24;\n  const minutes = allMinutes % 60;\n  const seconds = allSeconds % 60;\n  return `${day}天${hours}小时${minutes}分钟${seconds}秒`;\n}\n\nmodule.exports = pastDate;\n\n//# sourceURL=webpack://utils/./src/date/pastDate.js?");
 
 /***/ }),
 
@@ -393,6 +382,83 @@ eval("/**\r\n * 浅克隆\r\n * @date 2022-02-25\r\n * @param {Object} obj 需�
 
 /***/ }),
 
+/***/ "./src/random/randomColor.js":
+/*!***********************************!*\
+  !*** ./src/random/randomColor.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 描述 随机生成颜色\r\n * @date 2022-02-27\r\n * @returns {String}\r\n */\nfunction randomColor() {\n  return '#' + ('00000' + (Math.random() * 0x1000000 << 0).toString(16)).slice(-6);\n}\n\nmodule.exports = randomColor;\n\n//# sourceURL=webpack://utils/./src/random/randomColor.js?");
+
+/***/ }),
+
+/***/ "./src/random/randomNumber.js":
+/*!************************************!*\
+  !*** ./src/random/randomNumber.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 生成指定范围[min, max] 的随机数\r\n * @date 2022-02-27\r\n * @param {Number} min\r\n * @param {Number} max\r\n * @returns {Number}\r\n */\nfunction randomNumber(min, max) {\n  min = Math.ceil(min);\n  max = Math.floor(max);\n  return Math.floor(Math.random() * (max - min + 1)) + min;\n}\n\nmodule.exports = randomNumber;\n\n//# sourceURL=webpack://utils/./src/random/randomNumber.js?");
+
+/***/ }),
+
+/***/ "./src/regexp/isColor.js":
+/*!*******************************!*\
+  !*** ./src/regexp/isColor.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 判断是否为16进制颜色， rgb 或 rgba\r\n * @date 2022-02-27\r\n * @param {String} str\r\n * @returns {Boolean}\r\n */\nfunction isColor(str) {\n  return (/^(#([0-9a-fA-F]{3}){1,2}|[rR][gG][Bb](\\((\\s*(2[0-4]\\d|25[0-5]|[01]?\\d{1,2})\\s*,){2}\\s*(2[0-4]\\d|25[0-5]|[01]?\\d{1,2})\\s*\\)|[Aa]\\((\\s*(2[0-4]\\d|25[0-5]|[01]?\\d{1,2})\\s*,){3}\\s*([01]|0\\.\\d+)\\s*\\)))$/.test(str)\n  );\n}\n\nmodule.exports = isColor;\n\n//# sourceURL=webpack://utils/./src/regexp/isColor.js?");
+
+/***/ }),
+
+/***/ "./src/regexp/isEmail.js":
+/*!*******************************!*\
+  !*** ./src/regexp/isEmail.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 判断是否为邮箱地址\r\n * @date 2022-02-27\r\n * @param {String} str\r\n * @returns {Boolean}\r\n */\nfunction isEmail(str) {\n  return (/\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*/.test(str)\n  );\n}\n\nmodule.exports = isEmail;\n\n//# sourceURL=webpack://utils/./src/regexp/isEmail.js?");
+
+/***/ }),
+
+/***/ "./src/regexp/isIdCard.js":
+/*!********************************!*\
+  !*** ./src/regexp/isIdCard.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 判断是否为身份证号\r\n * @date 2022-02-27\r\n * @param {String|Number} str\r\n * @returns {Boolean}\r\n */\nfunction isIdCard(str) {\n  return (/^(^[1-9]\\d{7}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}$)|(^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])((\\d{4})|\\d{3}[Xx])$)$/.test(str)\n  );\n}\n\nmodule.exports = isIdCard;\n\n//# sourceURL=webpack://utils/./src/regexp/isIdCard.js?");
+
+/***/ }),
+
+/***/ "./src/regexp/isPhoneNum.js":
+/*!**********************************!*\
+  !*** ./src/regexp/isPhoneNum.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 判断是否为手机号\r\n * @date 2022-02-27\r\n * @param {String|Number} str\r\n * @returns {Boolean}\r\n */\nfunction isPhoneNum(str) {\n  return (/^(\\+?0?86\\-?)?1[3456789]\\d{9}$/.test(str)\n  );\n}\n\nmodule.exports = isPhoneNum;\n\n//# sourceURL=webpack://utils/./src/regexp/isPhoneNum.js?");
+
+/***/ }),
+
+/***/ "./src/regexp/isUrl.js":
+/*!*****************************!*\
+  !*** ./src/regexp/isUrl.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 描述\r\n * @date 判断是否为URL地址\r\n * @param {String} str\r\n * @returns {Boolean}\r\n */\nfunction isUrl(str) {\n  return (/[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)/i.test(str)\n  );\n}\n\nmodule.exports = isUrl;\n\n//# sourceURL=webpack://utils/./src/regexp/isUrl.js?");
+
+/***/ }),
+
 /***/ "./src/storage/getStorage.js":
 /*!***********************************!*\
   !*** ./src/storage/getStorage.js ***!
@@ -423,6 +489,116 @@ eval("/**\r\n * 删除本地存储\r\n * @date 2022-02-17\r\n * @param {string} 
 /***/ (function(module, exports) {
 
 eval("/**\r\n * 添加本地存储\r\n * @date 2022-02-17\r\n * @param {string} name 本地存储名称\r\n * @param {*} data 本地存储数据\r\n */\nfunction setStorage(name, data) {\n  if (typeof data === 'object') {\n    data = JSON.stringify(data);\n  }\n  window.localStorage.setItem(name, data);\n}\n\nmodule.exports = setStorage;\n\n//# sourceURL=webpack://utils/./src/storage/setStorage.js?");
+
+/***/ }),
+
+/***/ "./src/string/digitUppercase.js":
+/*!**************************************!*\
+  !*** ./src/string/digitUppercase.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 现金额转大写\r\n * @date 2022-02-27\r\n * @param {Number} n\r\n * @returns {String}\r\n */\nfunction digitUppercase(n) {\n  var fraction = ['角', '分'];\n  var digit = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];\n  var unit = [['元', '万', '亿'], ['', '拾', '佰', '仟']];\n  var head = n < 0 ? '欠' : '';\n  n = Math.abs(n);\n  var s = '';\n  for (var i = 0; i < fraction.length; i++) {\n    s += (digit[Math.floor(n * 10 * Math.pow(10, i)) % 10] + fraction[i]).replace(/零./, '');\n  }\n  s = s || '整';\n  n = Math.floor(n);\n  for (var i = 0; i < unit[0].length && n > 0; i++) {\n    var p = '';\n    for (var j = 0; j < unit[1].length && n > 0; j++) {\n      p = digit[n % 10] + unit[1][j] + p;\n      n = Math.floor(n / 10);\n    }\n    s = p.replace(/(零.)*零$/, '').replace(/^$/, '零') + unit[0][i] + s;\n  }\n  return head + s.replace(/(零.)*零元/, '元').replace(/(零.)+/g, '零').replace(/^整$/, '零元整');\n}\n\nmodule.exports = digitUppercase;\n\n//# sourceURL=webpack://utils/./src/string/digitUppercase.js?");
+
+/***/ }),
+
+/***/ "./src/support/isSupportWebP.js":
+/*!**************************************!*\
+  !*** ./src/support/isSupportWebP.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 判断浏览器是否支持webP格式图片\r\n * @date 2022-02-27\r\n * @returns {Boolean}\r\n */\nfunction isSupportWebP() {\n  return !![].map && document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0;\n}\n\nmodule.exports = isSupportWebP;\n\n//# sourceURL=webpack://utils/./src/support/isSupportWebP.js?");
+
+/***/ }),
+
+/***/ "./src/time/formatPassTime.js":
+/*!************************************!*\
+  !*** ./src/time/formatPassTime.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 格式化${startTime}距现在的已过时间\r\n * @param  {Date} startTime \r\n * @return {String}\r\n */\nfunction formatPassTime(startTime) {\n  var currentTime = Date.parse(new Date()),\n      time = currentTime - startTime,\n      day = parseInt(time / (1000 * 60 * 60 * 24)),\n      hour = parseInt(time / (1000 * 60 * 60)),\n      min = parseInt(time / (1000 * 60)),\n      month = parseInt(day / 30),\n      year = parseInt(month / 12);\n  if (year) return year + \"年前\";\n  if (month) return month + \"个月前\";\n  if (day) return day + \"天前\";\n  if (hour) return hour + \"小时前\";\n  if (min) return min + \"分钟前\";else return '刚刚';\n}\n\nmodule.exports = formatPassTime;\n\n//# sourceURL=webpack://utils/./src/time/formatPassTime.js?");
+
+/***/ }),
+
+/***/ "./src/time/formatRemainTime.js":
+/*!**************************************!*\
+  !*** ./src/time/formatRemainTime.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 计算从一个时间到现在过去多久\r\n * @date 2022-02-24\r\n * @param {String} 字符串日期 '2020-11-29'\r\n * @returns {String} '451天15小时17分钟25秒'\r\n */\nfunction formatRemainTime(time) {\n  const nowStamp = new Date().getTime();\n  const targetStamp = new Date(time.replace(/-/g, '/')).getTime();\n  const difference = nowStamp - targetStamp;\n  const allSeconds = Math.floor(difference / 1000);\n  const allMinutes = Math.floor(allSeconds / 60);\n  const allHours = Math.floor(allMinutes / 60);\n  const day = Math.floor(allHours / 24);\n  const hours = allHours % 24;\n  const minutes = allMinutes % 60;\n  const seconds = allSeconds % 60;\n  return `${day}天${hours}小时${minutes}分钟${seconds}秒`;\n}\n\nmodule.exports = formatRemainTime;\n\n//# sourceURL=webpack://utils/./src/time/formatRemainTime.js?");
+
+/***/ }),
+
+/***/ "./src/time/isLeapYear.js":
+/*!********************************!*\
+  !*** ./src/time/isLeapYear.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 是否为闰年\r\n * @date 2022-02-27\r\n * @param {Number} year\r\n * @returns {Boolean}\r\n */\nfunction isLeapYear(year) {\n  if (0 === year % 4 && (year % 100 !== 0 || year % 400 === 0)) {\n    return true;\n  }\n  return false;\n}\n\nmodule.exports = isLeapYear;\n\n//# sourceURL=webpack://utils/./src/time/isLeapYear.js?");
+
+/***/ }),
+
+/***/ "./src/time/isSameDay.js":
+/*!*******************************!*\
+  !*** ./src/time/isSameDay.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 判断是否为同一天\r\n * @date 2022-02-27\r\n * @param {Date} date1\r\n * @param {Date} date2 可选 / 默认值：当天\r\n * @returns {Boolean}\r\n */\nfunction isSameDay(date1, date2) {\n  if (!date2) {\n    date2 = new Date();\n  }\n  var date1_year = date1.getFullYear(),\n      date1_month = date1.getMonth() + 1,\n      date1_date = date1.getDate();\n  var date2_year = date2.getFullYear(),\n      date2_month = date2.getMonth() + 1,\n      date2_date = date2.getDate();\n  return date1_date === date2_date && date1_month === date2_month && date1_year === date2_year;\n}\n\nmodule.exports = isSameDay;\n\n//# sourceURL=webpack://utils/./src/time/isSameDay.js?");
+
+/***/ }),
+
+/***/ "./src/time/monthDays.js":
+/*!*******************************!*\
+  !*** ./src/time/monthDays.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 获取指定日期月份的总天数\r\n * @date 2022-02-27\r\n * @param {Date} time\r\n * @returns {Number}\r\n */\nfunction monthDays(time) {\n  time = new Date(time);\n  var year = time.getFullYear();\n  var month = time.getMonth() + 1;\n  return new Date(year, month, 0).getDate();\n}\n\nmodule.exports = monthDays;\n\n//# sourceURL=webpack://utils/./src/time/monthDays.js?");
+
+/***/ }),
+
+/***/ "./src/time/timeLeft.js":
+/*!******************************!*\
+  !*** ./src/time/timeLeft.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * ${startTime - endTime}的剩余时间,startTime大于endTime时，均返回0\r\n * @param { Date | String } startTime\r\n * @param { Date | String } endTime\r\n * @returns { Object } { d, h, m, s } 天 时 分 秒\r\n */\nfunction timeLeft(startTime, endTime) {\n  if (!startTime || !endTime) {\n    return;\n  }\n  var startDate, endDate;\n  if (startTime instanceof Date) {\n    startDate = startTime;\n  } else {\n    startDate = new Date(startTime.replace(/-/g, '/')); //开始时间\n  }\n  if (endTime instanceof Date) {\n    endDate = endTime;\n  } else {\n    endDate = new Date(endTime.replace(/-/g, '/')); //结束时间\n  }\n  var t = endDate.getTime() - startDate.getTime();\n  var d = 0,\n      h = 0,\n      m = 0,\n      s = 0;\n  if (t >= 0) {\n    d = Math.floor(t / 1000 / 3600 / 24);\n    h = Math.floor(t / 1000 / 60 / 60 % 24);\n    m = Math.floor(t / 1000 / 60 % 60);\n    s = Math.floor(t / 1000 % 60);\n  }\n  return {\n    d,\n    h,\n    m,\n    s\n  };\n}\n\nmodule.exports = timeLeft;\n\n//# sourceURL=webpack://utils/./src/time/timeLeft.js?");
+
+/***/ }),
+
+/***/ "./src/url/parseQueryString.js":
+/*!*************************************!*\
+  !*** ./src/url/parseQueryString.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * url参数转对象\r\n * @date 2022-02-27\r\n * @param {String} url default: window.location.href\r\n * @returns {Object}\r\n */\nfunction parseQueryString(url) {\n  url = !url ? window.location.href : url;\n  if (url.indexOf('?') === -1) {\n    return {};\n  }\n  var search = url[0] === '?' ? url.substr(1) : url.substring(url.lastIndexOf('?') + 1);\n  if (search === '') {\n    return {};\n  }\n  search = search.split('&');\n  var query = {};\n  for (let i = 0; i < search.length; i++) {\n    var pair = search[i].split('=');\n    query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');\n  }\n  return query;\n}\n\nmodule.exports = parseQueryString;\n\n//# sourceURL=webpack://utils/./src/url/parseQueryString.js?");
+
+/***/ }),
+
+/***/ "./src/url/stringifyQueryString.js":
+/*!*****************************************!*\
+  !*** ./src/url/stringifyQueryString.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("/**\r\n * 对象序列化\r\n * @date 2022-02-27\r\n * @param {Object} obj\r\n * @returns {String}\r\n */\nfunction stringifyQueryString(obj) {\n  if (!obj) return '';\n  var pairs = [];\n\n  for (var key in obj) {\n    var value = obj[key];\n    if (value instanceof Array) {\n      for (var i = 0; i < value.length; ++i) {\n        pairs.push(encodeURIComponent(key + '[' + i + ']') + '=' + encodeURIComponent(value[i]));\n      }\n      continue;\n    }\n    pairs.push(encodeURIComponent(key) + '=' + encodeURIComponent(obj[key]));\n  }\n\n  return pairs.join('&');\n}\n\nmodule.exports = stringifyQueryString;\n\n//# sourceURL=webpack://utils/./src/url/stringifyQueryString.js?");
 
 /***/ })
 

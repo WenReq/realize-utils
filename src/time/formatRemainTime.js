@@ -4,7 +4,7 @@
  * @param {String} 字符串日期 '2020-11-29'
  * @returns {String} '451天15小时17分钟25秒'
  */
-function pastDate(time) {
+function formatRemainTime(time) {
   const nowStamp = new Date().getTime()
   const targetStamp = new Date(time.replace(/-/g, '/')).getTime()
   const difference = nowStamp - targetStamp
@@ -18,4 +18,4 @@ function pastDate(time) {
   return `${day}天${hours}小时${minutes}分钟${seconds}秒`
 }
 
-module.exports = pastDate
+module.exports = formatRemainTime

@@ -69,9 +69,6 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 #### &emsp;&emsp;[setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js)&emsp;&emsp;根据 name,vakue,days 设置 Cookie
 #### &emsp;&emsp;[removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js)&emsp;&emsp;根据 name 删除 Cookie
 
-### Date
-#### &emsp;&emsp;[pastDate](https://github.com/wenreq/realize-utils/blob/master/src/date/pastDate.js)&emsp;&emsp;计算一个时间到现在过去了多久
-
 ### Device
 #### &emsp;&emsp;[getExplore](https://github.com/wenreq/realize-utils/blob/master/src/device/getExplore.js)&emsp;&emsp;获取浏览器：版本号
 #### &emsp;&emsp;[getOS](https://github.com/wenreq/realize-utils/blob/master/src/device/getOS.js)&emsp;&emsp;获取操作系统类型
@@ -90,13 +87,44 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 ### Keycode
 #### &emsp;&emsp;[getKeyName](https://github.com/wenreq/realize-utils/blob/master/src/keycode/getKeyName.js)&emsp;&emsp;根据keycode获得键名
 
+### localStorage
+#### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name 读取 localStorage
+#### &emsp;&emsp;[setStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name,value 添加 localStorage
+#### &emsp;&emsp;[removeStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name 删除 localStorage
+
 ### Object
 #### &emsp;&emsp;[deepClone](https://github.com/wenreq/realize-utils/blob/master/src/object/deepClone.js)&emsp;&emsp;对象的深拷贝
 #### &emsp;&emsp;[shallowClone](https://github.com/wenreq/realize-utils/blob/master/src/object/shallowClone.js)&emsp;&emsp;对象的浅拷贝
 #### &emsp;&emsp;[isEmptyObject](https://github.com/wenreq/realize-utils/blob/master/src/object/isEmptyObject.js)&emsp;&emsp;判断对象是否为空
 #### &emsp;&emsp;[getFormData](https://github.com/wenreq/realize-utils/blob/master/src/object/getFormData.js)&emsp;&emsp;将对象转换为 formData 对象
 
-### localStorage
-#### &emsp;&emsp;[getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name 读取 localStorage
-#### &emsp;&emsp;[setStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name,value 添加 localStorage
-#### &emsp;&emsp;[removeStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js)&emsp;&emsp;根据 name 删除 localStorage
+### Random
+#### &emsp;&emsp;[randomColor](https://github.com/wenreq/realize-utils/blob/master/src/random/randomColor.js)&emsp;&emsp;随机生成颜色
+#### &emsp;&emsp;[randomNum](https://github.com/wenreq/realize-utils/blob/master/src/random/randomNum.js)&emsp;&emsp;生成指定范围随机数
+
+### Regexp
+#### &emsp;&emsp;[isColor](https://github.com/wenreq/realize-utils/blob/master/src/regexp/isColor.js)&emsp;&emsp;判断是否为16进制颜色，rgb 或 rgba
+#### &emsp;&emsp;[isEmail](https://github.com/wenreq/realize-utils/blob/master/src/regexp/isEmail.js)&emsp;&emsp;判断是否为邮箱地址
+#### &emsp;&emsp;[isIdCard](https://github.com/wenreq/realize-utils/blob/master/src/regexp/isIdCard.js)&emsp;&emsp;判断是否为身份证号
+#### &emsp;&emsp;[isPhoneNum](https://github.com/wenreq/realize-utils/blob/master/src/regexp/isPhoneNum.js)&emsp;&emsp;判断是否为手机号
+#### &emsp;&emsp;[isUrl](https://github.com/wenreq/realize-utils/blob/master/src/regexp/isUrl.js)&emsp;&emsp;判断是否为URL地址
+
+### String
+#### &emsp;&emsp;[digitUppercase](https://github.com/wenreq/realize-utils/blob/master/src/string/digitUppercase.js)&emsp;&emsp;现金额转大写
+
+### Supprot
+#### &emsp;&emsp;[isSupportWebP](https://github.com/wenreq/realize-utils/blob/master/src/support/isSupportWebP.js)&emsp;&emsp;判断浏览器是否支持webP格式图片
+
+
+### Time
+#### &emsp;&emsp;[formatRemainTime](https://github.com/wenreq/realize-utils/blob/master/src/time/formatRemainTime.js)&emsp;&emsp;计算一个时间到现在过去了多久&emsp;&emsp;'451天15小时17分钟25秒'
+#### &emsp;&emsp;[formatPassTime](https://github.com/wenreq/realize-utils/blob/master/src/time/formatPassTime.js)&emsp;&emsp;计算一个时间到现在过去了多久&emsp;&emsp;'1年前' '6个月前' '45分钟前'
+#### &emsp;&emsp;[isLeapYear](https://github.com/wenreq/realize-utils/blob/master/src/time/isLeapYear.js)&emsp;&emsp;判断是否为闰年
+#### &emsp;&emsp;[isSameDay](https://github.com/wenreq/realize-utils/blob/master/src/time/isSameDay.js)&emsp;&emsp;判断是否为同一天
+#### &emsp;&emsp;[timeLeft](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js)&emsp;&emsp;计算${startTime - endTime}的剩余时间
+#### &emsp;&emsp;[monthDays](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js)&emsp;&emsp;获取指定日期月份的总天数
+
+
+### Url
+#### &emsp;&emsp;[parseQueryString](https://github.com/wenreq/realize-utils/blob/master/src/url/parseQueryString.js)&emsp;&emsp;url参数转对象
+#### &emsp;&emsp;[stringifyQueryString](https://github.com/wenreq/realize-utils/blob/master/src/url/stringifyQueryString.js)&emsp;&emsp;对象序列化
