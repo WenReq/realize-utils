@@ -1,11 +1,11 @@
 /**
  * 格式化${startTime}距现在的已过时间
- * @param  {Date} startTime 
+ * @param  {Date} startTime '2020-11-29'
  * @return {String}
  */
 function formatPassTime(startTime) {
   var currentTime = Date.parse(new Date()),
-    time = currentTime - startTime,
+    time = currentTime - Date.parse(new Date(startTime)),
     day = parseInt(time / (1000 * 60 * 60 * 24)),
     hour = parseInt(time / (1000 * 60 * 60)),
     min = parseInt(time / (1000 * 60)),

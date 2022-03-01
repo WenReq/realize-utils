@@ -2,7 +2,7 @@
 
 # realize-utils
 
-[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.1.3&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils)
+[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.1.5&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils)
 
 前端业务代码工具库
 

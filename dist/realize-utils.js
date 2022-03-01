@@ -521,7 +521,7 @@ eval("/**\r\n * 判断浏览器是否支持webP格式图片\r\n * @date 2022-02-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\r\n * 格式化${startTime}距现在的已过时间\r\n * @param  {Date} startTime \r\n * @return {String}\r\n */\nfunction formatPassTime(startTime) {\n  var currentTime = Date.parse(new Date()),\n      time = currentTime - startTime,\n      day = parseInt(time / (1000 * 60 * 60 * 24)),\n      hour = parseInt(time / (1000 * 60 * 60)),\n      min = parseInt(time / (1000 * 60)),\n      month = parseInt(day / 30),\n      year = parseInt(month / 12);\n  if (year) return year + \"年前\";\n  if (month) return month + \"个月前\";\n  if (day) return day + \"天前\";\n  if (hour) return hour + \"小时前\";\n  if (min) return min + \"分钟前\";else return '刚刚';\n}\n\nmodule.exports = formatPassTime;\n\n//# sourceURL=webpack://utils/./src/time/formatPassTime.js?");
+eval("/**\r\n * 格式化${startTime}距现在的已过时间\r\n * @param  {Date} startTime '2020-11-29'\r\n * @return {String}\r\n */\nfunction formatPassTime(startTime) {\n  var currentTime = Date.parse(new Date()),\n      time = currentTime - Date.parse(new Date(startTime)),\n      day = parseInt(time / (1000 * 60 * 60 * 24)),\n      hour = parseInt(time / (1000 * 60 * 60)),\n      min = parseInt(time / (1000 * 60)),\n      month = parseInt(day / 30),\n      year = parseInt(month / 12);\n  if (year) return year + \"年前\";\n  if (month) return month + \"个月前\";\n  if (day) return day + \"天前\";\n  if (hour) return hour + \"小时前\";\n  if (min) return min + \"分钟前\";else return '刚刚';\n}\n\nmodule.exports = formatPassTime;\n\n//# sourceURL=webpack://utils/./src/time/formatPassTime.js?");
 
 /***/ }),
 
