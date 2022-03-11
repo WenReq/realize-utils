@@ -1,6 +1,6 @@
 {
   "name": "realize-utils",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "前端业务代码工具库",
   "main": "./dist/realize-utils.js",
   "scripts": {
@@ -8,8 +8,12 @@
     "watch": "webpack --watch",
     "eslint": "eslint src --ext .ts",
     "test": "mocha -r jsdom-global/register",
-    "test1": "nyc mocha -r jsdom-global/register"
+    "test1": "nyc mocha -r jsdom-global/register",
+    "prepublishOnly": "npm run test && npm run build"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wenreq/realize-utils"
