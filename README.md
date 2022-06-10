@@ -25,25 +25,25 @@ npm i realize-utils -D
 ```html
 <script src="realize-utils.js"></script>
 <script>
-  const newArr = utils.uniqueArray([1, 3, 5, 1, 2, 3, 5])
-  console.log(newArr) // [1, 3, 5, 2]
+  const newArr = utils.uniqueArray([1, 3, 5, 1, 2, 3, 5]);
+  console.log(newArr); // [1, 3, 5, 2]
 
-  const bFlag = utils.equalityArray([1, 2, 3], [1, 2, 3])
-  console.log(bFlag) // true
+  const bFlag = utils.equalityArray([1, 2, 3], [1, 2, 3]);
+  console.log(bFlag); // true
 </script>
 ```
 
 ## 快速上手:key:
 
 ```js
-import { setStorage, getStorage, uniqueArray } from 'realize-utils'
-setStorage('name', 'wen')
-let name = getStorage('name')
-console.log(name) // wen
+import { setStorage, getStorage, uniqueArray } from "realize-utils";
+setStorage("name", "wen");
+let name = getStorage("name");
+console.log(name); // wen
 
-let arr = [1, 3, 5, 1, 2, 3, 5]
-let uniqueArr = uniqueArray(arr)
-console.log(uniqueArr) // [1, 3, 5, 2]
+let arr = [1, 3, 5, 1, 2, 3, 5];
+let uniqueArr = uniqueArray(arr);
+console.log(uniqueArr); // [1, 3, 5, 2]
 ```
 
 ## npm 链接:link:
@@ -163,7 +163,8 @@ console.log(uniqueArr) // [1, 3, 5, 2]
 - [timeLeft](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间
 
 - [monthDays](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js) 获取指定日期月份的总天数
-- [dateBetweenAllDay](https://github.com/wenreq/realize-utils/blob/master/src/time/dateBetweenAllDay.js) 根据指定的两个日期，计算并返回中间的所有日期。dateBetweenAllDay('2022-06-01', '2022-06-09') // ['2022-06-01', '2022-06-02', '2022-06-03', '2022-06-04', '2022-06-05', '2022-06-06', '2022-06-07', '2022-06-08', '2022-06-09']
+
+- [dateBetweenAllDay(startDay, endDay)](https://github.com/wenreq/realize-utils/blob/master/src/time/dateBetweenAllDay.js) 根据指定的两个日期，计算并返回中间的所有日期。dateBetweenAllDay('2022-06-01', '2022-06-09') // ['2022-06-01', '2022-06-02', '2022-06-03', '2022-06-04', '2022-06-05', '2022-06-06', '2022-06-07', '2022-06-08', '2022-06-09']
 
 ### Url
 
