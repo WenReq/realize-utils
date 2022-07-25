@@ -12,8 +12,8 @@ let timeout,result;
 
 function debounce(func,wait,immediate) {
   let debounced = function() {
-      let context = this;         //将this用context接收
-      let args = arguments;       //将arguments用args接收
+    let context = this;         //将this用context接收
+    let args = arguments;       //将arguments用args接收
 
     if (timeout) clearTimeout(timeout); //如果有timeout在执行，清除它
     if(immediate) {
