@@ -74,7 +74,7 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 - [getCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/getCookie.js) 根据 name 读取 Cookie
 
-- [setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js) 根据 name,vakue,days 设置 Cookie
+- [setCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/setCookie.js) 根据 name,value,days 设置 Cookie
 
 - [removeCookie](https://github.com/wenreq/realize-utils/blob/master/src/cookie/removeCookie.js) 根据 name 删除 Cookie
 
