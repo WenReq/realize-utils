@@ -6,18 +6,19 @@
  * 节流起到了可控制高频事件逻辑执行的次数
  * @date 2022-02-24
  * @param {Function} fn 延迟毫秒后执行的函数。
- * @param {Number} time 延迟的毫秒数
+ * @param {Number} wait 延迟的毫秒数
+ * @param {Boolean} immediate 为true时，fn在可以执行时立即执行，否则必须延时wait后才能执行
  */
-function throttle(fn, time) {
-  let flag = true
-  return function () {
-    if (flag) {
-      setTimeout(() => {
-        fn()
-        flag = true
-      }, time)
+function throttle(fn, wait, immediate = false) {
+  let timeout = null
+  return (...args) => {
+    if (!timeout) {
+      immediate && fn.apply(this, args)
+      timeout = setTimeout(() => {
+        !immediate && fn.apply(this, args)
+        timeout = null
+      }, wait)
     }
-    flag = false
   }
 }
 
