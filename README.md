@@ -2,7 +2,7 @@
 
 # realize-utils
 
-[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.2.1&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils) [![coverage](https://img.shields.io/static/v1?label=coverage&message=80.71%&color=ff69b4)](https://github.com/wenreq/realize-utils/tree/master/test)
+[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.4.1&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils) [![coverage](https://img.shields.io/static/v1?label=coverage&message=80.71%&color=ff69b4)](https://github.com/wenreq/realize-utils/tree/master/test)
 
 前端业务代码工具库
 
