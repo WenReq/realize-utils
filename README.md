@@ -160,11 +160,13 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 - [isSameDay](https://github.com/wenreq/realize-utils/blob/master/src/time/isSameDay.js) 判断是否为同一天
 
-- [timeLeft](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间
+- [timeLeft(startTime, endTime)](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间
 
-- [monthDays](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js) 获取指定日期月份的总天数
+- [monthDays(month)](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js) 获取指定日期月份的总天数
 
-- [dateBetweenAllDay(startDay, endDay)](https://github.com/wenreq/realize-utils/blob/master/src/time/dateBetweenAllDay.js) 根据指定的两个日期，计算并返回中间的所有日期。dateBetweenAllDay('2022-06-01', '2022-06-09') // ['2022-06-01', '2022-06-02', '2022-06-03', '2022-06-04', '2022-06-05', '2022-06-06', '2022-06-07', '2022-06-08', '2022-06-09']
+- [twoDateBetweenAllDay(startDay, endDay)](https://github.com/wenreq/realize-utils/blob/master/src/time/twoDateBetweenAllDay.js) 根据指定的两个日期，计算并返回中间的所有日期。twoDateBetweenAllDay('2022-06-01', '2022-06-09') // ['2022-06-01', '2022-06-02', '2022-06-03', '2022-06-04', '2022-06-05', '2022-06-06', '2022-06-07', '2022-06-08', '2022-06-09']
+
+- [twoDaysBetweenNum(startDay, endDay)](https://github.com/wenreq/realize-utils/blob/master/src/time/twoDaysBetweenNum.js) 计算两个日期之间的天数。 使用场景：距今天已有 N 天。twoDaysBetweenNum('2022-06-16', '2022-06-20') // 4
 
 ### Url
 
