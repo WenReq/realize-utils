@@ -150,7 +150,7 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 ### String
 
-- [digitUppercase](https://github.com/wenreq/realize-utils/blob/master/src/string/digitUppercase.js) 现金额转大写
+- [digitUppercase](https://github.com/wenreq/realize-utils/blob/master/src/string/digitUppercase.js) 现金额转大写 digitUppercase(1314521) => '壹佰叁拾壹万肆仟伍佰贰拾壹元整'
 
 ### Supprot
 
@@ -162,13 +162,13 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 - [formatPassTime](https://github.com/wenreq/realize-utils/blob/master/src/time/formatPassTime.js) 计算一个时间到现在过去了多久 '1 年前' '6 个月前' '45 分钟前'
 
-- [isLeapYear](https://github.com/wenreq/realize-utils/blob/master/src/time/isLeapYear.js) 判断是否为闰年
+- [isLeapYear](https://github.com/wenreq/realize-utils/blob/master/src/time/isLeapYear.js) 判断是否为闰年 isLeapYear(2020) => true  isLeapYear(2021) => false isLeapYear(2022) => false
 
-- [isSameDay](https://github.com/wenreq/realize-utils/blob/master/src/time/isSameDay.js) 判断是否为同一天
+- [isSameDay](https://github.com/wenreq/realize-utils/blob/master/src/time/isSameDay.js) 判断是否为同一天 isSameDay('2022-08-06', '2022-08-06') => true
 
-- [timeLeft(startTime, endTime)](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间
+- [timeLeft(startTime, endTime)](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间 timeLeft('2022-08-06 10:10:10', '2022-08-10 11:15:15') => {d: 4, h: 1, m: 5, s: 5} // 剩余4天1小时5分5秒
 
-- [monthDays(month)](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js) 获取指定日期月份的总天数
+- [monthDays(month)](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js) 获取指定日期月份的总天数 monthDays('2022-08') => 31   monthDays('2022-06') => 30
 
 - [twoDateBetweenAllDay(startDay, endDay)](https://github.com/wenreq/realize-utils/blob/master/src/time/twoDateBetweenAllDay.js) 根据指定的两个日期，计算并返回中间的所有日期。twoDateBetweenAllDay('2022-06-01', '2022-06-09') // ['2022-06-01', '2022-06-02', '2022-06-03', '2022-06-04', '2022-06-05', '2022-06-06', '2022-06-07', '2022-06-08', '2022-06-09']
 
@@ -176,6 +176,6 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 ### Url
 
-- [parseQueryString](https://github.com/wenreq/realize-utils/blob/master/src/url/parseQueryString.js) url 参数转对象
+- [parseQueryString](https://github.com/wenreq/realize-utils/blob/master/src/url/parseQueryString.js) url 参数转对象 parseQueryString('?a=1&b=2&c=3') => {a: '1', b: '2', c: '3'}
 
-- [stringifyQueryString](https://github.com/wenreq/realize-utils/blob/master/src/url/stringifyQueryString.js) 对象序列化
+- [stringifyQueryString](https://github.com/wenreq/realize-utils/blob/master/src/url/stringifyQueryString.js) 对象序列化 stringifyQueryString({a: '1', b: '2', c: '3'}) => 'a=1&b=2&c=3'
