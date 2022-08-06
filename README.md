@@ -114,6 +114,12 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 - [removeStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js) 根据 name 删除 localStorage
 
+### Number
+
+- [standardAmount](https://github.com/wenreq/realize-utils/blob/master/src/number/standardAmount.js) 将数字（整数逢三一断）含小数转换成标准的金额模式，最多保留三位小数。standardAmount(999999999.9991) => '999,999,999.999'
+
+- [standardIntegerAmount](https://github.com/wenreq/realize-utils/blob/master/src/number/standardIntegerAmount.js) 将 "整数" 数字（整数逢三一断）。standardIntegerAmount(99999999999) => '99,999,999,999'
+
 ### Object
 
 - [deepClone](https://github.com/wenreq/realize-utils/blob/master/src/object/deepClone.js) 对象的深拷贝
