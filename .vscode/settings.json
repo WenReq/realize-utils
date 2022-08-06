@@ -1,4 +1,7 @@
 {
   "eslint.run": "onSave",
-  "markdown.extension.toc.updateOnSave": false
+  "markdown.extension.toc.updateOnSave": false,
+  "search.exclude": {
+    "**/node_modules": false
+  }
 }
