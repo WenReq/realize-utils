@@ -3,5 +3,6 @@
   "markdown.extension.toc.updateOnSave": false,
   "search.exclude": {
     "**/node_modules": false
-  }
+  },
+  "vsicons.presets.nestjs": true
 }
