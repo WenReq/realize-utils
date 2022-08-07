@@ -1,7 +1,7 @@
 /**
  * 格式化${startTime}距现在的已过时间
- * @param  {Date} startTime '2020-11-29'
- * @return {String}
+ * @param  {Date} startTime '2020-11-29' 
+ * @return {String} '1天前' '1年前'
  */
 function formatPassTime(startTime) {
   var currentTime = Date.parse(new Date()),
