@@ -158,7 +158,7 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 ### Time
 
-- [dateFormater](https://github.com/wenreq/realize-utils/blob/master/src/time/dateFormater.js) 格式化时间 dateFormater('YYYY-MM-DD HH:mm') => '2022-08-07' dateFormater('YYYY-MM-DD', '2020.11.29') => '2020-11-29' dateFormater('YYYYMMDDHHmm', '2020-11-29 18:10:07') => '202011291810'
+- [dateFormater](https://github.com/wenreq/realize-utils/blob/master/src/time/dateFormater.js) 格式化时间 dateFormater('YYYY-MM-DD HH:mm') => '2022-08-07 14:40' dateFormater('YYYY-MM-DD', '2020.11.29') => '2020-11-29' dateFormater('YYYYMMDDHHmm', '2020-11-29 18:10:07') => '202011291810'
 
 - [dateStrFormat](https://github.com/wenreq/realize-utils/blob/master/src/time/dateStrFormat.js) 将指定字符串由一种时间格式转化为另一种。dateStrForma('20220807', 'YYYYMMDD', 'YYYY年MM月DD日') ==> 2022年08月07日  dateStrForma('2022年08月07日', 'YYYY年MM月DD日', 'YYYYMMDD') ==> 20220807
 
