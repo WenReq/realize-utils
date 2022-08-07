@@ -2,7 +2,7 @@
 
 # realize-utils
 
-[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.5.1&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils) [![coverage](https://img.shields.io/static/v1?label=coverage&message=80.71%&color=ff69b4)](https://github.com/wenreq/realize-utils/tree/master/test)
+[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.6.1&color=blue)](https://www.npmjs.com/package/realize-utils) [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils) [![coverage](https://img.shields.io/static/v1?label=coverage&message=80.71%&color=ff69b4)](https://github.com/wenreq/realize-utils/tree/master/test)
 
 前端业务代码工具库
 
@@ -10,7 +10,7 @@
 
 业务开发过程中，会经常用到`日期格式化`、`url参数转对象`、`浏览器类型判断`、`节流函数`等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到 npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交 pr
 
-## 安装:wrench:
+## 安装 :wrench:
 
 直接下载 `dist` 目录下的 [realize-utils.js](https://github.com/wenreq/realize-utils/blob/master/dist/realize-utils.js) 使用，支持 UMD 通用模块规范
 
@@ -158,6 +158,10 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 ### Time
 
+- [dateFormater](https://github.com/wenreq/realize-utils/blob/master/src/time/dateFormater.js) 格式化时间 dateFormater('YYYY-MM-DD HH:mm') => '2022-08-07' dateFormater('YYYY-MM-DD', '2020.11.29') => '2020-11-29' dateFormater('YYYYMMDDHHmm', '2020-11-29 18:10:07') => '202011291810'
+
+- [dateStrFormat](https://github.com/wenreq/realize-utils/blob/master/src/time/dateStrFormat.js) 将指定字符串由一种时间格式转化为另一种。dateStrForma('20220807', 'YYYYMMDD', 'YYYY年MM月DD日') ==> 2022年08月07日  dateStrForma('2022年08月07日', 'YYYY年MM月DD日', 'YYYYMMDD') ==> 20220807
+
 - [formatRemainTime](https://github.com/wenreq/realize-utils/blob/master/src/time/formatRemainTime.js) 计算一个时间到现在过去了多久 '451 天 15 小时 17 分钟 25 秒'
 
 - [formatPassTime](https://github.com/wenreq/realize-utils/blob/master/src/time/formatPassTime.js) 计算一个时间到现在过去了多久 '1 年前' '6 个月前' '45 分钟前'
@@ -166,9 +170,9 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 - [isSameDay](https://github.com/wenreq/realize-utils/blob/master/src/time/isSameDay.js) 判断是否为同一天 isSameDay('2022-08-06', '2022-08-06') => true
 
-- [timeLeft(startTime, endTime)](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间 timeLeft('2022-08-06 10:10:10', '2022-08-10 11:15:15') => {d: 4, h: 1, m: 5, s: 5} // 剩余4天1小时5分5秒
-
 - [monthDays(month)](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js) 获取指定日期月份的总天数 monthDays('2022-08') => 31   monthDays('2022-06') => 30
+
+- [timeLeft(startTime, endTime)](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间 timeLeft('2022-08-06 10:10:10', '2022-08-10 11:15:15') => {d: 4, h: 1, m: 5, s: 5} // 剩余4天1小时5分5秒
 
 - [twoDateBetweenAllDay(startDay, endDay)](https://github.com/wenreq/realize-utils/blob/master/src/time/twoDateBetweenAllDay.js) 根据指定的两个日期，计算并返回中间的所有日期。twoDateBetweenAllDay('2022-06-01', '2022-06-09') // ['2022-06-01', '2022-06-02', '2022-06-03', '2022-06-04', '2022-06-05', '2022-06-06', '2022-06-07', '2022-06-08', '2022-06-09']
 
