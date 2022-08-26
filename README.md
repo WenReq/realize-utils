@@ -1,3 +1,5 @@
+es 分支，主要是为了，打三种类型（cjs、esm、umd）的模块包，切出来的。
+
 [![realize-utils](http://oss.tianmasport.com/gx/size/2022-02-23/196/946000020912472064.png)](https://github.com/wenreq/realize-utils)
 
 # realize-utils
