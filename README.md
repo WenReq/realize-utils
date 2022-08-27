@@ -1,5 +1,17 @@
 es 分支，主要是为了，打三种类型（cjs、esm、umd）的模块包，切出来的。
 
+```
+realize-utils
+|-- lib/（存放打包后的文件）
+|-- src/（每个模块实现函数的源码文件）
+|-- test (每个模块实现函数的测试文件)
+|-- package.json (npm package的一些基本信息)
+|-- rollup.config.base.js（rollup基础配置）
+|-- rollup.config.dev.js（rollup开发配置）
+|-- rollup.config.js（rollup正式配置）
+|-- README.md
+```
+
 [![realize-utils](http://oss.tianmasport.com/gx/size/2022-02-23/196/946000020912472064.png)](https://github.com/wenreq/realize-utils)
 
 # realize-utils
