@@ -15,7 +15,7 @@ function mergeObject(target, source) {
         return source.slice()
     }
     let sourcePropValue = null;
-    Object.keys(source).forEach(prop => {
+    Object.keys(source).forEach(function(prop){
         sourcePropValue = source[prop];
         if (sourcePropValue && typeof sourcePropValue === 'object') {
             target[prop] = mergeObject(target[prop], sourcePropValue);
