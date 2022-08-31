@@ -2,6 +2,7 @@ var deepClone = require('../src/object/deepClone')
 var shallowClone = require('../src/object/shallowClone')
 var isEmptyObject = require('../src/object/isEmptyObject')
 var getFormData = require('../src/object/getFormData')
+
 var assert = require('assert')
 
 describe('Object API', function () {
