@@ -18,7 +18,7 @@ function mergeObject(target, source) {
     Object.keys(source).forEach(prop => {
         sourcePropValue = source[prop];
         if (sourcePropValue && typeof sourcePropValue === 'object') {
-            target[prop] = deepMergeObject(target[prop], sourcePropValue, isCover);
+            target[prop] = mergeObject(target[prop], sourcePropValue);
         }
         if(target.hasOwnProperty(prop)){
             target[prop] = [].concat(target[prop],sourcePropValue);
