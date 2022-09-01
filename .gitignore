@@ -2,3 +2,4 @@ node_modules/
 test_dist
 .vscode
 .nyc_output
+package-lock.json
