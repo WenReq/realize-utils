@@ -6,6 +6,7 @@
   "jsnext:main": "./lib/realize-utils.esm.js",
   "module": "./lib/realize-utils.esm.js",
   "browser": "./lib/realize-utils.browser.js",
+  "type": "module",
   "scripts": {
     "build": "npx rollup -c rollup.config.js",
     "eslint": "eslint src --ext .ts",
