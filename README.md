@@ -30,20 +30,14 @@ realize-utils
 
 业务开发过程中，会经常用到`日期格式化`、`url参数转对象`、`浏览器类型判断`、`节流函数`等常用函数，为避免不同项目多次复制粘贴的麻烦，这里统一封装，并发布到 npm，以提高开发效率。如果你也有常用的代码，欢迎为本项目提交 pr
 
-## 安装 :wrench:
+## 安装和使用 :wrench:
 
-直接下载 `dist` 目录下的 [realize-utils.js](https://github.com/wenreq/realize-utils/blob/master/dist/realize-utils.js) 使用，支持 UMD 通用模块规范
+### CDN
 
-使用 npm 安装
-
-```shell
-npm i realize-utils -D
-```
-
-### 浏览器:computer:
+直接下载 `lib` 目录下的 [realize-utils.browser.js](https://github.com/wenreq/realize-utils/blob/master/lib/realize-utils.browser.js) 使用，支持 CDN 方式，直接在 html 文件中引入使用。
 
 ```html
-<script src="realize-utils.js"></script>
+<script src="./js/realize-utils.js"></script>
 <script>
   const newArr = utils.uniqueArray([1, 3, 5, 1, 2, 3, 5]);
   console.log(newArr); // [1, 3, 5, 2]
@@ -53,7 +47,13 @@ npm i realize-utils -D
 </script>
 ```
 
-## 快速上手:key:
+### ESM
+
+使用 npm 安装。支持 Tree-shaking。
+
+```shell
+npm i realize-utils -D
+```
 
 ```js
 import { setStorage, getStorage, uniqueArray } from "realize-utils";
@@ -66,11 +66,15 @@ let uniqueArr = uniqueArray(arr);
 console.log(uniqueArr); // [1, 3, 5, 2]
 ```
 
-## npm 链接:link:
+### CJS
+
+直接下载 `lib` 目录下的 [realize-utils.cjs.js](https://github.com/wenreq/realize-utils/blob/master/lib/realize-utils.cjs.js) 使用，在 node 环境中引入使用。
+
+## npm 链接 :link:
 
 [realize-utils](https://www.npmjs.com/package/realize-utils)
 
-## API 文档:package:
+## API 文档 :package:
 
 ### Array
 
