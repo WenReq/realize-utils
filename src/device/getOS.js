@@ -1,9 +1,19 @@
+/*
+ * @Author: wenreq 294491328@qq.com
+ * @Date: 2022-11-09 21:17:24
+ * @LastEditors: wenreq 294491328@qq.com
+ * @LastEditTime: 2022-11-10 22:52:12
+ * @FilePath: /realize-utils/src/device/getOS.js
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
+ */
 /**
  * 获取操作系统类型
  * @date 2022-02-23
  * @returns {String} 操作系统类型
  */
-function getOS() {
+export let getOS = function getOS() {
   var userAgent = 'navigator' in window && 'userAgent' in navigator && navigator.userAgent.toLowerCase() || '';
   var appVersion = 'navigator' in window && 'appVersion' in navigator && navigator.appVersion.toLowerCase() || '';
 
@@ -14,5 +24,3 @@ function getOS() {
   if (/win/i.test(appVersion)) return 'windows'
   if (/linux/i.test(appVersion)) return 'linux'
 }
-
-module.exports = getOS;

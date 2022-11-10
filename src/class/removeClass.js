@@ -1,4 +1,15 @@
-var hasClass = require('./hasClass');
+/*
+ * @Author: wenreq 294491328@qq.com
+ * @Date: 2022-11-09 21:17:24
+ * @LastEditors: wenreq 294491328@qq.com
+ * @LastEditTime: 2022-11-10 22:55:01
+ * @FilePath: /realize-utils/src/class/removeClass.js
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
+ */
+// var hasClass = require('./hasClass');
+import { hasClass } from './hasClass';
 
 /**
  * 为元素移除某个class类
@@ -6,11 +17,9 @@ var hasClass = require('./hasClass');
  * @param {HTMLElement} ele 元素
  * @param {String} cls 类名
  */
-function removeClass(ele, cls) {
+export let removeClass = function removeClass(ele, cls) {
   if (hasClass(ele, cls)) { 
     var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
     ele.className = ele.className.replace(reg, ' ');
   }
 }
-
-module.exports = removeClass

@@ -1,6 +1,6 @@
 {
   "name": "realize-utils",
-  "version": "1.7.1",
+  "version": "2.0.2",
   "description": "前端业务代码工具库",
   "main": "./lib/realize-utils.cjs.js",
   "jsnext:main": "./lib/realize-utils.esm.js",
@@ -12,17 +12,17 @@
     "eslint": "eslint src --ext .ts",
     "test": "mocha -r jsdom-global/register",
     "test1": "nyc mocha -r jsdom-global/register",
-    "prepublishOnly": "npm run test && npm run build",
+    "prepublishOnly": "npm run build",
     "echo": "echo hello",
     "preecho": "echo 'hello -> Before'",
     "postecho": "echo 'hello -> After'"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wenreq/realize-utils"
+    "url": "git+https://github.com/wenreq/realize-utils/tree/es"
   },
   "keywords": [
     "utils",

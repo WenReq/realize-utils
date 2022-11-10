@@ -5,12 +5,10 @@
  * @returns {String} 转换后的值
  * @example standardAmount(999999999.9991) => '999,999,999.999'
  */
- function standardAmount(value) {
-    if (!value) {
-      return value === 0 ? '0' : '--'
-    }
-    const intPartFormat = parseFloat(value).toLocaleString()
-    return intPartFormat
-}
-
-module.exports = standardAmount;
+export let standardAmount = function standardAmount(value) {
+  if (!value) {
+    return value === 0 ? "0" : "--";
+  }
+  const intPartFormat = parseFloat(value).toLocaleString();
+  return intPartFormat;
+};

@@ -2,7 +2,7 @@
  * 描述: 全屏
  * @date 2022-08-16
  */
-function toFullScreen() {
+export let toFullScreen = function toFullScreen() {
     let elem = document.body;
         elem.webkitRequestFullScreen
         ? elem.webkitRequestFullScreen()
@@ -14,5 +14,3 @@ function toFullScreen() {
         ? elem.requestFullScreen()
         : alert("浏览器不支持全屏");
 }
-
-module.exports = toFullScreen;

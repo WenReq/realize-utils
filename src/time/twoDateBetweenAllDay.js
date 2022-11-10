@@ -1,10 +1,3 @@
-/*
- * @Descripttion:
- * @Author: wenshaochang
- * @Date: 2022-06-09 21:55:32
- * @LastEditors: wenshaochang
- * @LastEditTime: 2022-06-09 22:41:59
- */
 /**
  * 根据指定的两个日期，计算并返回中间的所有日期。
  * @date 2022-06-09
@@ -12,7 +5,7 @@
  * @param {String} endDay 结束日期 '2022-06-09'
  * @returns {Array} 包含所有日期的集合 ['2022-06-01', '2022-06-02', '2022-06-03', '2022-06-04', '2022-06-05', '2022-06-06', '2022-06-07', '2022-06-08', '2022-06-09']
  */
-function twoDateBetweenAllDay(startDay, endDay) {
+export let twoDateBetweenAllDay = function twoDateBetweenAllDay(startDay, endDay) {
   let arr = []
   let dates = []
   // 设置两个日期 UTC 时间
@@ -37,5 +30,3 @@ function twoDateBetweenAllDay(startDay, endDay) {
   }
   return dates
 }
-
-module.exports = twoDateBetweenAllDay

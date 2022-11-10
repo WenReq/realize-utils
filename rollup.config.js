@@ -1,10 +1,20 @@
+/*
+ * @Author: wenreq 294491328@qq.com
+ * @Date: 2022-11-09 21:49:35
+ * @LastEditors: wenreq 294491328@qq.com
+ * @LastEditTime: 2022-11-10 23:02:52
+ * @FilePath: /realize-utils/rollup.config.js
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
+ */
 const path = require("path");
 const resolve = require("rollup-plugin-node-resolve");
 const commonjs = require("rollup-plugin-commonjs");
 const babel = require("rollup-plugin-babel");
 const json = require("rollup-plugin-json");
 const { terser } = require("rollup-plugin-terser");
-import pkg from "./package.json" assert { type: "json" };
+import pkg from "./package.json";
 const formatName = "hello";
 
 module.exports = {

@@ -1,12 +1,12 @@
 rollup 最大的亮点就是 Tree-shaking，即可以静态分析代码中的 import，并排除任何未使用的代码。这允许我们架构于现有工具和模块之上，而不会增加额外的依赖或使项目的大小膨胀。如果用 webpack 做，虽然可以实现 tree-shaking，但是需要自己配置并且打包出来的代码非常臃肿，所以对于库文件和 UI 组件，rollup 更加适合。
 
-> es 分支，主要是为了，打三种类型（cjs、esm、umd）的模块包，切出来的。
+[rollup 参考视频](https://www.bilibili.com/video/BV1bi4y1c7fU/?spm_id_from=333.337.search-card.all.click&vd_source=08f7a2ca46536916f537de5075cece94)
 
-[参考视频](https://www.bilibili.com/video/BV1bi4y1c7fU/?spm_id_from=333.337.search-card.all.click&vd_source=08f7a2ca46536916f537de5075cece94)
+> es 分支，主要是为了，打三种类型（cjs、esm、umd）的模块包，切出来的。
 
 [github](https://github.com/ChenWoyao/baleExample/tree/master/woyao_util)
 
-```
+```tree
 realize-utils
 |-- lib/（存放打包后的文件）
 |-- src/（每个模块实现函数的源码文件）

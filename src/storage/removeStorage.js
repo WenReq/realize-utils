@@ -4,8 +4,6 @@
  * @param {string} name 本地存储名称
  * @returns {boolean} 删除成功 true，否则 false
  */
-function removeStorage(name) {
+export let removeStorage = function removeStorage(name) {
   return window.localStorage.removeItem(name)
 }
-
-module.exports = removeStorage

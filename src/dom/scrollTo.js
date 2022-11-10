@@ -1,3 +1,13 @@
+/*
+ * @Author: wenreq 294491328@qq.com
+ * @Date: 2022-11-09 21:17:24
+ * @LastEditors: wenreq 294491328@qq.com
+ * @LastEditTime: 2022-11-10 22:50:45
+ * @FilePath: /realize-utils/src/dom/scrollTo.js
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
+ */
 var getScrollTop = require('./getScrollTop')
 var setScrollTop = require('./setScrollTop')
 var requestAnimFrame = (function () {
@@ -15,7 +25,7 @@ var requestAnimFrame = (function () {
  * @param {Number} to 滚动位置的值
  * @param {Number} duration 时间-毫秒数
  */
-function scrollTo(to, duration) {
+export let scrollTo = function scrollTo(to, duration) {
   if (duration < 0) {
     setScrollTop(to);
     return
@@ -37,5 +47,3 @@ function scrollTo(to, duration) {
     }
   )
 }
-
-module.exports = scrollTo;

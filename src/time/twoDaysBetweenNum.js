@@ -5,7 +5,7 @@
  * @param {Date} endDay 结束日期 '2022-06-20'
  * @returns {Number} 两个日期之间的天数 4
  */
-const twoDaysBetweenNum = (startDay, endDay) => {
+export let twoDaysBetweenNum = (startDay, endDay) => {
   if (
     startDay === '' ||
     startDay === null ||
@@ -24,5 +24,3 @@ const twoDaysBetweenNum = (startDay, endDay) => {
   const days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1000)
   return days
 }
-
-module.exports = twoDaysBetweenNum

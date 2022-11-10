@@ -1,3 +1,13 @@
+/*
+ * @Author: wenreq 294491328@qq.com
+ * @Date: 2022-11-09 21:17:24
+ * @LastEditors: wenreq 294491328@qq.com
+ * @LastEditTime: 2022-11-10 22:57:07
+ * @FilePath: /realize-utils/src/array/subArray.js
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
+ */
 /**
  * 数组相减
  * 例如有两个数组
@@ -10,7 +20,7 @@
  * @param {Array} array2 要处理的数组
  * @returns {Array} 相减后的数组
  */
-function subArray(array1, array2) {
+export let subArray = function subArray(array1, array2) {
   if (array1.length > array2.length) {
     return array1.filter((item1) => {
       return !array2.find((item2) => {
@@ -25,5 +35,3 @@ function subArray(array1, array2) {
     })
   }
 }
-
-module.exports = subArray

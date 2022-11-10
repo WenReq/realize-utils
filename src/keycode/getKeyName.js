@@ -112,7 +112,7 @@ var keyCodeMap = {
  * @param  {Number} keycode 
  * @return {String}
  */
-function getKeyName(keycode) {
+export let getKeyName = function getKeyName(keycode) {
   if (keyCodeMap[keycode]) {
     return keyCodeMap[keycode];
   } else {
@@ -120,5 +120,3 @@ function getKeyName(keycode) {
     return '';
   }
 };
-
-module.exports = getKeyName;

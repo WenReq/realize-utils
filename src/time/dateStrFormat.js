@@ -10,10 +10,10 @@
  *  dateStrForma('121220220807', '----YYYYMMDD', 'YYYY年MM月DD日') ==> 2022年08月07日
  *  dateStrForma('2022年08月07日', 'YYYY年MM月DD日', 'YYYYMMDD') ==> 20220807
  * 
- * // 一般的也可以使用正则来实现
+ * 一般的也可以使用正则来实现
  * '2022年08月07日'.replace(/(\d{4})年(\d{2})月(\d{2})日/, '$1-$2-$3') ==> 2022-08-07
  */
-function dateStrFormat(str, from, to){
+export let dateStrFormat = function dateStrFormat(str, from, to){
   //'20220807' 'YYYYMMDD' 'YYYY年MM月DD日'
   str += ''
   let Y = ''
@@ -33,5 +33,3 @@ function dateStrFormat(str, from, to){
   })
   return to
 }
-
-module.exports = dateStrFormat

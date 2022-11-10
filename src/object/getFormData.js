@@ -4,7 +4,7 @@
  * @param {Object} object 需要转换的对象
  * @returns {Object} formData 对象
  */
-function getFormData(object) {
+export let getFormData = function getFormData(object) {
   let formData = new FormData()
   Object.keys(object).forEach((key) => {
     let value = object[key]
@@ -16,5 +16,3 @@ function getFormData(object) {
   })
   return formData
 }
-
-module.exports = getFormData
