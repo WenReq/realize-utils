@@ -4,7 +4,7 @@
  * @param {Number} n
  * @returns {String}
  */
-function digitUppercase(n) {
+export let digitUppercase = function digitUppercase(n) {
   var fraction = ['角', '分'];
   var digit = [
     '零', '壹', '贰', '叁', '肆',
@@ -34,5 +34,3 @@ function digitUppercase(n) {
     .replace(/(零.)+/g, '零')
     .replace(/^整$/, '零元整');
 }
-
-module.exports = digitUppercase

@@ -1,9 +1,19 @@
+/*
+ * @Author: wenreq 294491328@qq.com
+ * @Date: 2022-11-09 21:17:24
+ * @LastEditors: wenreq 294491328@qq.com
+ * @LastEditTime: 2022-11-10 22:52:36
+ * @FilePath: /realize-utils/src/device/getExplore.js
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
+ */
 /**
  * 获取浏览器类型和版本
  * @date 2022-02-23
  * @returns {String} '类型：版本'
  */
-function getExplore() {
+export let getExplore = function getExplore() {
   var sys = {},
     ua = navigator.userAgent.toLowerCase(),
     s;
@@ -25,5 +35,3 @@ function getExplore() {
   if (sys.safari) return ('Safari: ' + sys.safari)
   return 'unknown'
 }
-
-module.exports = getExplore

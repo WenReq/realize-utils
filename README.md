@@ -1,3 +1,23 @@
+rollup 最大的亮点就是 Tree-shaking，即可以静态分析代码中的 import，并排除任何未使用的代码。这允许我们架构于现有工具和模块之上，而不会增加额外的依赖或使项目的大小膨胀。如果用 webpack 做，虽然可以实现 tree-shaking，但是需要自己配置并且打包出来的代码非常臃肿，所以对于库文件和 UI 组件，rollup 更加适合。
+
+[rollup 参考视频](https://www.bilibili.com/video/BV1bi4y1c7fU/?spm_id_from=333.337.search-card.all.click&vd_source=08f7a2ca46536916f537de5075cece94)
+
+> es 分支，主要是为了，打三种类型（cjs、esm、umd）的模块包，切出来的。
+
+[github](https://github.com/ChenWoyao/baleExample/tree/master/woyao_util)
+
+```tree
+realize-utils
+|-- lib/（存放打包后的文件）
+|-- src/（每个模块实现函数的源码文件）
+|-- test (每个模块实现函数的测试文件)
+|-- package.json (npm package的一些基本信息)
+|-- rollup.config.base.js（rollup基础配置）
+|-- rollup.config.dev.js（rollup开发配置）
+|-- rollup.config.js（rollup正式配置）
+|-- README.md
+```
+
 [![realize-utils](http://oss.tianmasport.com/gx/size/2022-02-23/196/946000020912472064.png)](https://github.com/wenreq/realize-utils)
 
 # realize-utils
@@ -93,7 +113,6 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 
 - [getKeyName](https://github.com/wenreq/realize-utils/blob/master/src/keycode/getKeyName.js) 根据 keycode 获得键名
 
-
 ### Number
 
 - [standardAmount](https://github.com/wenreq/realize-utils/blob/master/src/number/standardAmount.js) 将数字（整数逢三一断）含小数转换成标准的金额模式，最多保留三位小数。standardAmount(999999999.9991) => '999,999,999.999'
@@ -125,6 +144,7 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 - [exitFullscreen](https://github.com/wenreq/realize-utils/blob/master/src/screen/exitFullscreen.js) 退出全屏 exitFullscreen()
 
 ### Storage
+
 - [getStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js) 根据 name 读取 localStorage
 - [setStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js) 根据 name,value 添加 localStorage
 - [removeStorage](https://github.com/wenreq/realize-utils/blob/master/src/storage/index.js) 根据 name 删除 localStorage
@@ -136,18 +156,18 @@ console.log(uniqueArr); // [1, 3, 5, 2]
 ### Supprot
 
 - [isSupportWebP](https://github.com/wenreq/realize-utils/blob/master/src/support/isSupportWebP.js) 判断浏览器是否支持 webP 格式图片
-- [downloadFile](https://github.com/wenreq/realize-utils/blob/master/src/support/downloadFile.js) base64数据导出文件，文件下载 downloadFile(filename, data)
+- [downloadFile](https://github.com/wenreq/realize-utils/blob/master/src/support/downloadFile.js) base64 数据导出文件，文件下载 downloadFile(filename, data)
 
 ### Time
 
 - [dateFormater](https://github.com/wenreq/realize-utils/blob/master/src/time/dateFormater.js) 格式化时间 dateFormater('YYYY-MM-DD HH:mm') => '2022-08-07 14:40' dateFormater('YYYY-MM-DD', '2020.11.29') => '2020-11-29' dateFormater('YYYYMMDDHHmm', '2020-11-29 18:10:07') => '202011291810'
-- [dateStrFormat](https://github.com/wenreq/realize-utils/blob/master/src/time/dateStrFormat.js) 将指定字符串由一种时间格式转化为另一种。dateStrForma('20220807', 'YYYYMMDD', 'YYYY年MM月DD日') ==> 2022年08月07日  dateStrForma('2022年08月07日', 'YYYY年MM月DD日', 'YYYYMMDD') ==> 20220807
+- [dateStrFormat](https://github.com/wenreq/realize-utils/blob/master/src/time/dateStrFormat.js) 将指定字符串由一种时间格式转化为另一种。dateStrForma('20220807', 'YYYYMMDD', 'YYYY 年 MM 月 DD 日') ==> 2022 年 08 月 07 日 dateStrForma('2022 年 08 月 07 日', 'YYYY 年 MM 月 DD 日', 'YYYYMMDD') ==> 20220807
 - [formatRemainTime](https://github.com/wenreq/realize-utils/blob/master/src/time/formatRemainTime.js) 计算一个时间到现在过去了多久 '451 天 15 小时 17 分钟 25 秒'
 - [formatPassTime](https://github.com/wenreq/realize-utils/blob/master/src/time/formatPassTime.js) 计算一个时间到现在过去了多久 '1 年前' '6 个月前' '45 分钟前'
-- [isLeapYear](https://github.com/wenreq/realize-utils/blob/master/src/time/isLeapYear.js) 判断是否为闰年 isLeapYear(2020) => true  isLeapYear(2021) => false isLeapYear(2022) => false
+- [isLeapYear](https://github.com/wenreq/realize-utils/blob/master/src/time/isLeapYear.js) 判断是否为闰年 isLeapYear(2020) => true isLeapYear(2021) => false isLeapYear(2022) => false
 - [isSameDay](https://github.com/wenreq/realize-utils/blob/master/src/time/isSameDay.js) 判断是否为同一天 isSameDay('2022-08-06', '2022-08-06') => true
-- [monthDays(month)](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js) 获取指定日期月份的总天数 monthDays('2022-08') => 31   monthDays('2022-06') => 30
-- [timeLeft(startTime, endTime)](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间 timeLeft('2022-08-06 10:10:10', '2022-08-10 11:15:15') => {d: 4, h: 1, m: 5, s: 5} // 剩余4天1小时5分5秒
+- [monthDays(month)](https://github.com/wenreq/realize-utils/blob/master/src/time/monthDays.js) 获取指定日期月份的总天数 monthDays('2022-08') => 31 monthDays('2022-06') => 30
+- [timeLeft(startTime, endTime)](https://github.com/wenreq/realize-utils/blob/master/src/time/timeLeft.js) 计算${startTime - endTime}的剩余时间 timeLeft('2022-08-06 10:10:10', '2022-08-10 11:15:15') => {d: 4, h: 1, m: 5, s: 5} // 剩余 4 天 1 小时 5 分 5 秒
 - [twoDateBetweenAllDay(startDay, endDay)](https://github.com/wenreq/realize-utils/blob/master/src/time/twoDateBetweenAllDay.js) 根据指定的两个日期，计算并返回中间的所有日期。twoDateBetweenAllDay('2022-06-01', '2022-06-09') // ['2022-06-01', '2022-06-02', '2022-06-03', '2022-06-04', '2022-06-05', '2022-06-06', '2022-06-07', '2022-06-08', '2022-06-09']
 - [twoDaysBetweenNum(startDay, endDay)](https://github.com/wenreq/realize-utils/blob/master/src/time/twoDaysBetweenNum.js) 计算两个日期之间的天数。 使用场景：距今天已有 N 天。twoDaysBetweenNum('2022-06-16', '2022-06-20') // 4
 

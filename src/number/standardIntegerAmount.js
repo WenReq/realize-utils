@@ -5,12 +5,10 @@
  * @returns {String} 转换后的值
  * @example standardIntegerAmount(99999999999) => '99,999,999,999'
  */
-function standardIntegerAmount(value) {
-    if (!value) {
-        return value === 0 ? '0' : '--'
-    }
-    const intPartFormat = value.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,')
-    return intPartFormat
-}
-
-module.exports = standardIntegerAmount;
+export let standardIntegerAmount = function standardIntegerAmount(value) {
+  if (!value) {
+    return value === 0 ? "0" : "--";
+  }
+  const intPartFormat = value.toString().replace(/(\d)(?=(?:\d{3})+$)/g, "$1,");
+  return intPartFormat;
+};

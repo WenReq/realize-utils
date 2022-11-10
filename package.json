@@ -1,25 +1,28 @@
 {
   "name": "realize-utils",
-  "version": "1.7.2",
+  "version": "2.0.2",
   "description": "前端业务代码工具库",
-  "main": "./dist/realize-utils.js",
+  "main": "./lib/realize-utils.cjs.js",
+  "jsnext:main": "./lib/realize-utils.esm.js",
+  "module": "./lib/realize-utils.esm.js",
+  "browser": "./lib/realize-utils.browser.js",
+  "type": "module",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
+    "build": "npx rollup -c rollup.config.js",
     "eslint": "eslint src --ext .ts",
     "test": "mocha -r jsdom-global/register",
     "test1": "nyc mocha -r jsdom-global/register",
-    "prepublishOnly": "npm run test && npm run build",
+    "prepublishOnly": "npm run build",
     "echo": "echo hello",
     "preecho": "echo 'hello -> Before'",
     "postecho": "echo 'hello -> After'"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wenreq/realize-utils"
+    "url": "git+https://github.com/wenreq/realize-utils/tree/es"
   },
   "keywords": [
     "utils",
@@ -39,6 +42,11 @@
     "jsdom-global": "3.0.2",
     "mocha": "^10.0.0",
     "nyc": "^15.1.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2"
   },

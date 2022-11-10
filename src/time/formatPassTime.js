@@ -3,7 +3,7 @@
  * @param  {Date} startTime '2020-11-29' 
  * @return {String} '1天前' '1年前'
  */
-function formatPassTime(startTime) {
+export let formatPassTime = function formatPassTime(startTime) {
   var currentTime = Date.parse(new Date()),
     time = currentTime - Date.parse(new Date(startTime)),
     day = parseInt(time / (1000 * 60 * 60 * 24)),
@@ -18,5 +18,3 @@ function formatPassTime(startTime) {
   if (min) return min + "分钟前"
   else return '刚刚'
 }
-
-module.exports = formatPassTime

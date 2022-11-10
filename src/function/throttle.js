@@ -9,7 +9,7 @@
  * @param {Number} wait 延迟的毫秒数
  * @param {Boolean} immediate 为true时，fn在可以执行时立即执行，否则必须延时wait后才能执行
  */
-function throttle(fn, wait, immediate = false) {
+export let throttle = function throttle(fn, wait, immediate = false) {
   let timeout = null
   return (...args) => {
     if (!timeout) {
@@ -21,5 +21,3 @@ function throttle(fn, wait, immediate = false) {
     }
   }
 }
-
-module.exports = throttle

@@ -3,8 +3,6 @@
  * @date 2022-02-27
  * @returns {Boolean}
  */
-function isSupportWebP() {
+export let isSupportWebP = function isSupportWebP() {
   return !![].map && document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0;
 }
-
-module.exports = isSupportWebP;

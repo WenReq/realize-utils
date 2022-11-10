@@ -6,7 +6,7 @@
  * @returns {String} 格式化后的日期字符串 
  * @example dateFormater('YYYY-MM-DD', '2020.11.29') => '2020-11-29'
  */
-function dateFormater(formater, t) {
+export let dateFormater = function dateFormater(formater, t) {
   let date = t ? new Date(t) : new Date(),
     Y = date.getFullYear() + '',
     M = date.getMonth() + 1,
@@ -22,5 +22,3 @@ function dateFormater(formater, t) {
     .replace(/mm/g, (m < 10 ? '0' : '') + m)
     .replace(/ss/g, (s < 10 ? '0' : '') + s)
 }
-
-module.exports = dateFormater
