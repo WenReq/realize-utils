@@ -2,13 +2,12 @@
  * @Author: wenreq 294491328@qq.com
  * @Date: 2022-11-09 21:17:24
  * @LastEditors: wenreq 294491328@qq.com
- * @LastEditTime: 2022-11-10 22:56:13
+ * @LastEditTime: 2022-11-11 21:24:02
  * @FilePath: /realize-utils/src/class/addClass.js
  * @Description: 
  * 
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
  */
-// var hasClass = require('./hasClass');
 import { hasClass } from "./hasClass";
 
 /**
