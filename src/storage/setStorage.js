@@ -6,7 +6,7 @@
  */
 export let setStorage = function setStorage(name, data) {
   if (typeof data === 'object') {
-    data = JSON.stringify(data)
+    data = JSON.stringify(data);
   }
-  window.localStorage.setItem(name, data)
-}
+  window.localStorage.setItem(name, data);
+};

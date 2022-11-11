@@ -8,6 +8,6 @@
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-export { getStorage } from "./getStorage";
-export { removeStorage } from "./removeStorage";
-export { setStorage } from "./setStorage";
+export { getStorage } from './getStorage';
+export { removeStorage } from './removeStorage';
+export { setStorage } from './setStorage';

@@ -4,9 +4,9 @@
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-10 22:48:45
  * @FilePath: /realize-utils/src/dom/windowResize.js
- * @Description: 
- * 
- * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
+ * @Description:
+ *
+ * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
 /**
  * H5软键盘缩回、弹起回调
@@ -17,8 +17,8 @@
  */
 export let windowResize = function windowResize(downCb, upCb) {
   var clientHeight = window.innerHeight;
-  downCb = typeof downCb === 'function' ? downCb : function () {}
-  upCb = typeof upCb === 'function' ? upCb : function () {}
+  downCb = typeof downCb === 'function' ? downCb : function () {};
+  upCb = typeof upCb === 'function' ? upCb : function () {};
   window.addEventListener('resize', () => {
     var height = window.innerHeight;
     if (height === clientHeight) {
@@ -27,5 +27,5 @@ export let windowResize = function windowResize(downCb, upCb) {
     if (height < clientHeight) {
       upCb();
     }
-  })
-}
+  });
+};

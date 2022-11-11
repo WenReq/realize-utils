@@ -8,8 +8,8 @@
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-export { isColor } from "./isColor";
-export { isEmail } from "./isEmail";
-export { isIdCard } from "./isIdCard";
-export { isPhoneNum } from "./isPhoneNum";
-export { isUrl } from "./isUrl";
+export { isColor } from './isColor';
+export { isEmail } from './isEmail';
+export { isIdCard } from './isIdCard';
+export { isPhoneNum } from './isPhoneNum';
+export { isUrl } from './isUrl';

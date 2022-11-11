@@ -4,9 +4,9 @@
  * @LastEditors: wenreq 294491328@qq.com
  * @LastEditTime: 2022-11-10 22:57:07
  * @FilePath: /realize-utils/src/array/subArray.js
- * @Description: 
- * 
- * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved. 
+ * @Description:
+ *
+ * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
 /**
  * 数组相减
@@ -24,14 +24,14 @@ export let subArray = function subArray(array1, array2) {
   if (array1.length > array2.length) {
     return array1.filter((item1) => {
       return !array2.find((item2) => {
-        return item1 === item2
-      })
-    })
+        return item1 === item2;
+      });
+    });
   } else {
     return array2.filter((item1) => {
       return !array1.find((item2) => {
-        return item1 === item2
-      })
-    })
+        return item1 === item2;
+      });
+    });
   }
-}
+};

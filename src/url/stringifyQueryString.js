@@ -15,7 +15,7 @@
  * @returns {String}
  */
 export let stringifyQueryString = function stringifyQueryString(obj) {
-  if (!obj) return "";
+  if (!obj) return '';
   var pairs = [];
 
   for (var key in obj) {
@@ -23,15 +23,15 @@ export let stringifyQueryString = function stringifyQueryString(obj) {
     if (value instanceof Array) {
       for (var i = 0; i < value.length; ++i) {
         pairs.push(
-          encodeURIComponent(key + "[" + i + "]") +
-            "=" +
+          encodeURIComponent(key + '[' + i + ']') +
+            '=' +
             encodeURIComponent(value[i])
         );
       }
       continue;
     }
-    pairs.push(encodeURIComponent(key) + "=" + encodeURIComponent(obj[key]));
+    pairs.push(encodeURIComponent(key) + '=' + encodeURIComponent(obj[key]));
   }
 
-  return pairs.join("&");
+  return pairs.join('&');
 };

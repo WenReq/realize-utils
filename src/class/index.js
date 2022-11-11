@@ -8,6 +8,6 @@
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-export { addClass } from "./addClass";
-export { hasClass } from "./hasClass";
-export { removeClass } from "./removeClass";
+export { addClass } from './addClass';
+export { hasClass } from './hasClass';
+export { removeClass } from './removeClass';

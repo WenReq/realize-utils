@@ -10,14 +10,14 @@
  * @param {Boolean} immediate 为true时，fn在可以执行时立即执行，否则必须延时wait后才能执行
  */
 export let throttle = function throttle(fn, wait, immediate = false) {
-  let timeout = null
+  let timeout = null;
   return (...args) => {
     if (!timeout) {
-      immediate && fn.apply(this, args)
+      immediate && fn.apply(this, args);
       timeout = setTimeout(() => {
-        !immediate && fn.apply(this, args)
-        timeout = null
-      }, wait)
+        !immediate && fn.apply(this, args);
+        timeout = null;
+      }, wait);
     }
-  }
-}
+  };
+};

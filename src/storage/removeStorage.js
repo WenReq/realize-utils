@@ -5,5 +5,5 @@
  * @returns {boolean} 删除成功 true，否则 false
  */
 export let removeStorage = function removeStorage(name) {
-  return window.localStorage.removeItem(name)
-}
+  return window.localStorage.removeItem(name);
+};

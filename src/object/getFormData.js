@@ -5,14 +5,14 @@
  * @returns {Object} formData 对象
  */
 export let getFormData = function getFormData(object) {
-  let formData = new FormData()
+  let formData = new FormData();
   Object.keys(object).forEach((key) => {
-    let value = object[key]
+    let value = object[key];
     if (Array.isArray(value)) {
-      value.forEach((subValue, i) => formData.append(key + `[${i}]`, subValue))
+      value.forEach((subValue, i) => formData.append(key + `[${i}]`, subValue));
     } else {
-      formData.append(key, object[key])
+      formData.append(key, object[key]);
     }
-  })
-  return formData
-}
+  });
+  return formData;
+};

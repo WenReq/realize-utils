@@ -4,5 +4,11 @@
  * @returns {Boolean}
  */
 export let isSupportWebP = function isSupportWebP() {
-  return !![].map && document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0;
-}
+  return (
+    !![].map &&
+    document
+      .createElement('canvas')
+      .toDataURL('image/webp')
+      .indexOf('data:image/webp') == 0
+  );
+};

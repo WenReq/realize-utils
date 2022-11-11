@@ -7,7 +7,7 @@
  */
 export let standardAmount = function standardAmount(value) {
   if (!value) {
-    return value === 0 ? "0" : "--";
+    return value === 0 ? '0' : '--';
   }
   const intPartFormat = parseFloat(value).toLocaleString();
   return intPartFormat;

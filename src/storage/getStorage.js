@@ -4,10 +4,10 @@
  * @param {string} name 本地存储名称
  */
 export let getStorage = function getStorage(name) {
-  const data = window.localStorage.getItem(name)
+  const data = window.localStorage.getItem(name);
   try {
-    return JSON.parse(data)
+    return JSON.parse(data);
   } catch (error) {
-    return data
+    return data;
   }
-}
+};

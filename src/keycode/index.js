@@ -8,4 +8,4 @@
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-export { getKeyName } from "./getKeyName";
+export { getKeyName } from './getKeyName';

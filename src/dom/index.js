@@ -8,8 +8,8 @@
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-export { getScrollTop } from "./getScrollTop";
-export { offset } from "./offset";
-export { scrollTo } from "./scrollTo";
-export { setScrollTop } from "./setScrollTop";
-export { windowResize } from "./windowResize";
+export { getScrollTop } from './getScrollTop';
+export { offset } from './offset';
+export { scrollTo } from './scrollTo';
+export { setScrollTop } from './setScrollTop';
+export { windowResize } from './windowResize';

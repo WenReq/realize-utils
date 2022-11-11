@@ -8,7 +8,7 @@
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-export { equalityArray } from "./equalityArray";
-export { mergeArrayDelRepeat } from "./mergeArrayDelRepeat";
-export { subArray } from "./subArray";
-export { uniqueArray } from "./uniqueArray";
+export { equalityArray } from './equalityArray';
+export { mergeArrayDelRepeat } from './mergeArrayDelRepeat';
+export { subArray } from './subArray';
+export { uniqueArray } from './uniqueArray';

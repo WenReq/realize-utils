@@ -8,5 +8,5 @@
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-export { throttle } from "./throttle";
-export { debounce } from "./debounce";
+export { throttle } from './throttle';
+export { debounce } from './debounce';

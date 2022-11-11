@@ -6,7 +6,7 @@
  */
 export let isLeapYear = function isLeapYear(year) {
   if (0 === year % 4 && (year % 100 !== 0 || year % 400 === 0)) {
-    return true
+    return true;
   }
-  return false
-}
+  return false;
+};

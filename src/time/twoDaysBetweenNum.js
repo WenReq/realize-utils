@@ -14,13 +14,13 @@ export let twoDaysBetweenNum = (startDay, endDay) => {
     endDay === null ||
     endDay === undefined
   ) {
-    return null
+    return null;
   }
-  const startDate = Date.parse(startDay)
-  const endDate = Date.parse(endDay)
+  const startDate = Date.parse(startDay);
+  const endDate = Date.parse(endDay);
   if (startDate == endDate) {
-    return 0
+    return 0;
   }
-  const days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1000)
-  return days
-}
+  const days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1000);
+  return days;
+};

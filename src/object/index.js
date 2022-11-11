@@ -8,7 +8,7 @@
  *
  * Copyright (c) 2022 by wenreq 294491328@qq.com, All Rights Reserved.
  */
-export { deepClone } from "./deepClone";
-export { getFormData } from "./getFormData";
-export { isEmptyObject } from "./isEmptyObject";
-export { shallowClone } from "./shallowClone";
+export { deepClone } from './deepClone';
+export { getFormData } from './getFormData';
+export { isEmptyObject } from './isEmptyObject';
+export { shallowClone } from './shallowClone';

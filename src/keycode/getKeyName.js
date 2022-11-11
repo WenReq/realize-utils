@@ -105,11 +105,11 @@ var keyCodeMap = {
   219: '[',
   220: '\\',
   221: ']',
-  222: '\''
+  222: "'",
 };
 /**
  * @desc 根据keycode获得键名
- * @param  {Number} keycode 
+ * @param  {Number} keycode
  * @return {String}
  */
 export let getKeyName = function getKeyName(keycode) {

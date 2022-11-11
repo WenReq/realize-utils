@@ -1,6 +1,6 @@
 {
   "name": "realize-utils",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "前端函数工具库",
   "main": "./lib/realize-utils.cjs.js",
   "jsnext:main": "./lib/realize-utils.esm.js",
@@ -8,10 +8,10 @@
   "browser": "./lib/realize-utils.browser.js",
   "type": "module",
   "scripts": {
-    "build": "npx rollup -c rollup.config.js",
-    "eslint": "eslint src --ext .ts",
-    "test": "mocha -r jsdom-global/register",
-    "test1": "nyc mocha -r jsdom-global/register",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "eslint": "eslint . --ext .js --fix",
+    "lint": "npx prettier --write . && eslint . --ext .js --fix",
     "prepublishOnly": "npm run build",
     "echo": "echo hello",
     "preecho": "echo 'hello -> Before'",
@@ -33,27 +33,18 @@
   "author": "wen",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^9.1.0",
-    "babel-preset-env": "^1.7.0",
-    "coveralls": "^3.1.1",
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "eslint": "^8.9.0",
-    "jsdom": "20.0.2",
-    "jsdom-global": "3.0.2",
-    "mocha": "^10.0.0",
-    "nyc": "^15.1.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "webpack": "^5.70.0",
-    "webpack-cli": "^4.9.2"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "rollup": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "engines": {
-    "node": ">=12.6.0"
-  },
-  "dependencies": {
-    "@babel/core": "^7.0.0"
+    "node": ">=16.13.2"
   }
 }

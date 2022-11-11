@@ -14,6 +14,10 @@ export let isSameDay = function isSameDay(date1, date2) {
     date1_date = date1.getDate();
   var date2_year = date2.getFullYear(),
     date2_month = date2.getMonth() + 1,
-    date2_date = date2.getDate()
-  return date1_date === date2_date && date1_month === date2_month && date1_year === date2_year;
-}
+    date2_date = date2.getDate();
+  return (
+    date1_date === date2_date &&
+    date1_month === date2_month &&
+    date1_year === date2_year
+  );
+};

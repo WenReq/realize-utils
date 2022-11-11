@@ -7,8 +7,8 @@
  */
 export let standardIntegerAmount = function standardIntegerAmount(value) {
   if (!value) {
-    return value === 0 ? "0" : "--";
+    return value === 0 ? '0' : '--';
   }
-  const intPartFormat = value.toString().replace(/(\d)(?=(?:\d{3})+$)/g, "$1,");
+  const intPartFormat = value.toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
   return intPartFormat;
 };
