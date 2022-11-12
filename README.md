@@ -1,35 +1,12 @@
-rollup 最大的亮点就是 Tree-shaking，即可以静态分析代码中的 import，并排除任何未
-使用的代码。这允许我们架构于现有工具和模块之上，而不会增加额外的依赖或使项目的大
-小膨胀。如果用 webpack 做，虽然可以实现 tree-shaking，但是需要自己配置并且打包出
-来的代码非常臃肿，所以对于库文件和 UI 组件，rollup 更加适合。
-
-[rollup 参考视频](https://www.bilibili.com/video/BV1bi4y1c7fU/?spm_id_from=333.337.search-card.all.click&vd_source=08f7a2ca46536916f537de5075cece94)
-
-> es 分支，主要是为了，打三种类型（cjs、esm、umd）的模块包，切出来的。
-
-[github](https://github.com/ChenWoyao/baleExample/tree/master/woyao_util)
-
-```tree
-realize-utils
-|-- lib/（存放打包后的文件）
-|-- src/（每个模块实现函数的源码文件）
-|-- test (每个模块实现函数的测试文件)
-|-- package.json (npm package的一些基本信息)
-|-- rollup.config.base.js（rollup基础配置）
-|-- rollup.config.dev.js（rollup开发配置）
-|-- rollup.config.js（rollup正式配置）
-|-- README.md
-```
-
 [![realize-utils](http://oss.tianmasport.com/gx/size/2022-02-23/196/946000020912472064.png)](https://github.com/wenreq/realize-utils)
 
 # realize-utils
 
-[![npm version](https://img.shields.io/static/v1?label=npm&message=v1.7.2&color=blue)](https://www.npmjs.com/package/realize-utils)
+[![npm version](https://img.shields.io/static/v1?label=npm&message=v2.0.7&color=blue)](https://www.npmjs.com/package/realize-utils)
 [![license](https://img.shields.io/static/v1?label=license&message=MIT&color=green)](https://www.npmjs.com/package/realize-utils)
 [![coverage](https://img.shields.io/static/v1?label=coverage&message=80.71%&color=ff69b4)](https://github.com/wenreq/realize-utils/tree/master/test)
 
-前端业务代码工具库
+前端业务代码工具库，支持 UMD、CJS、ESM 多模式和 Tree-Shaking。
 
 > 目的：高效率完成前端业务代码
 
