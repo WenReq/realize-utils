@@ -1,6 +1,6 @@
 {
   "name": "realize-utils",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "前端函数工具库",
   "main": "./lib/realize-utils.cjs.js",
   "jsnext:main": "./lib/realize-utils.esm.js",
@@ -22,7 +22,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wenreq/realize-utils/tree/es"
+    "url": "git+https://github.com/wenreq/realize-utils"
   },
   "keywords": [
     "utils",
