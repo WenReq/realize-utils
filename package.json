@@ -1,6 +1,6 @@
 {
   "name": "realize-utils",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "前端函数工具库",
   "main": "./lib/realize-utils.cjs.js",
   "jsnext:main": "./lib/realize-utils.esm.js",

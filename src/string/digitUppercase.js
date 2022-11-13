@@ -2,7 +2,7 @@
  * @Author: wenreq 294491328@qq.com
  * @Date: 2022-11-10 23:22:07
  * @LastEditors: wenreq 294491328@qq.com
- * @LastEditTime: 2022-11-12 00:06:51
+ * @LastEditTime: 2022-11-13 14:01:49
  * @FilePath: /realize-utils/src/string/digitUppercase.js
  * @Description:
  *
@@ -31,7 +31,7 @@ export let digitUppercase = function digitUppercase(n) {
   }
   s = s || '整';
   n = Math.floor(n);
-  for (var l = 0; l < unit[0].length && n > 0; l++) {
+  for (var i = 0; i < unit[0].length && n > 0; i++) {
     var p = '';
     for (var j = 0; j < unit[1].length && n > 0; j++) {
       p = digit[n % 10] + unit[1][j] + p;
